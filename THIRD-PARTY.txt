@@ -1,0 +1,139 @@
+Third-party components in the ISEE demonstration
+
+The demonstration page includes open-source software and fonts. They remain under their own
+licences. The ISEE copyright notice in LICENSE does not apply to them.
+
+Fonts
+- Poppins — SIL Open Font License 1.1 — licences/LICENSE-Poppins-OFL.txt
+- Atkinson Hyperlegible — SIL Open Font License 1.1 — licences/LICENSE-Atkinson-Hyperlegible-OFL.txt
+
+Software bundled into index.html
+This is the production dependency list of the whole ISEE project (generated 2026-11-18 with
+`pnpm licenses list --prod`). The demonstration page bundles a subset of it. All are permissive
+open-source licences (MIT, ISC, BSD, BlueOak, Apache-2.0 or similar).
+
+│ Package                               │ License       │
+│ @isaacs/nonrecursive-glob-match       │ BlueOak-1.0.0 │
+│ glob                                  │ BlueOak-1.0.0 │
+│ lru-cache                             │ BlueOak-1.0.0 │
+│ minimatch                             │ BlueOak-1.0.0 │
+│ minipass                              │ BlueOak-1.0.0 │
+│ path-scurry                           │ BlueOak-1.0.0 │
+│ fast-uri                              │ BSD-3-Clause  │
+│ light-my-request                      │ BSD-3-Clause  │
+│ secure-json-parse                     │ BSD-3-Clause  │
+│ cliui                                 │ ISC           │
+│ fastq                                 │ ISC           │
+│ get-caller-file                       │ ISC           │
+│ inherits                              │ ISC           │
+│ pg-int8                               │ ISC           │
+│ require-main-filename                 │ ISC           │
+│ semver                                │ ISC           │
+│ set-blocking                          │ ISC           │
+│ setprototypeof                        │ ISC           │
+│ split2                                │ ISC           │
+│ which-module                          │ ISC           │
+│ y18n                                  │ ISC           │
+│ yaml                                  │ ISC           │
+│ yargs-parser                          │ ISC           │
+│ @fastify/accept-negotiator            │ MIT           │
+│ @fastify/ajv-compiler                 │ MIT           │
+│ @fastify/cookie                       │ MIT           │
+│ @fastify/deepmerge                    │ MIT           │
+│ @fastify/error                        │ MIT           │
+│ @fastify/fast-json-stringify-compiler │ MIT           │
+│ @fastify/formbody                     │ MIT           │
+│ @fastify/forwarded                    │ MIT           │
+│ @fastify/helmet                       │ MIT           │
+│ @fastify/merge-json-schemas           │ MIT           │
+│ @fastify/proxy-addr                   │ MIT           │
+│ @fastify/rate-limit                   │ MIT           │
+│ @fastify/send                         │ MIT           │
+│ @fastify/static                       │ MIT           │
+│ @lukeed/ms                            │ MIT           │
+│ @noble/hashes                         │ MIT           │
+│ @pinojs/redact                        │ MIT           │
+│ abstract-logging                      │ MIT           │
+│ ajv                                   │ MIT           │
+│ ajv-formats                           │ MIT           │
+│ ansi-regex                            │ MIT           │
+│ ansi-styles                           │ MIT           │
+│ atomic-sleep                          │ MIT           │
+│ avvio                                 │ MIT           │
+│ balanced-match                        │ MIT           │
+│ brace-expansion                       │ MIT           │
+│ camelcase                             │ MIT           │
+│ color-convert                         │ MIT           │
+│ color-name                            │ MIT           │
+│ content-disposition                   │ MIT           │
+│ cookie                                │ MIT           │
+│ decamelize                            │ MIT           │
+│ depd                                  │ MIT           │
+│ dequal                                │ MIT           │
+│ dijkstrajs                            │ MIT           │
+│ emoji-regex                           │ MIT           │
+│ escape-html                           │ MIT           │
+│ fast-decode-uri-component             │ MIT           │
+│ fast-deep-equal                       │ MIT           │
+│ fast-json-stringify                   │ MIT           │
+│ fast-querystring                      │ MIT           │
+│ fastify                               │ MIT           │
+│ fastify-plugin                        │ MIT           │
+│ find-my-way                           │ MIT           │
+│ find-up                               │ MIT           │
+│ helmet                                │ MIT           │
+│ http-errors                           │ MIT           │
+│ ip-address                            │ MIT           │
+│ ipaddr.js                             │ MIT           │
+│ is-fullwidth-code-point               │ MIT           │
+│ json-schema-ref-resolver              │ MIT           │
+│ json-schema-traverse                  │ MIT           │
+│ locate-path                           │ MIT           │
+│ luxon                                 │ MIT           │
+│ mime                                  │ MIT           │
+│ on-exit-leak-free                     │ MIT           │
+│ otpauth                               │ MIT           │
+│ p-limit                               │ MIT           │
+│ p-locate                              │ MIT           │
+│ p-try                                 │ MIT           │
+│ path-exists                           │ MIT           │
+│ pg                                    │ MIT           │
+│ pg-cloudflare                         │ MIT           │
+│ pg-connection-string                  │ MIT           │
+│ pg-pool                               │ MIT           │
+│ pg-protocol                           │ MIT           │
+│ pg-types                              │ MIT           │
+│ pgpass                                │ MIT           │
+│ pino                                  │ MIT           │
+│ pino-abstract-transport               │ MIT           │
+│ pino-std-serializers                  │ MIT           │
+│ pngjs                                 │ MIT           │
+│ postgres-array                        │ MIT           │
+│ postgres-bytea                        │ MIT           │
+│ postgres-date                         │ MIT           │
+│ postgres-interval                     │ MIT           │
+│ process-warning                       │ MIT           │
+│ qrcode                                │ MIT           │
+│ quick-format-unescaped                │ MIT           │
+│ real-require                          │ MIT           │
+│ require-directory                     │ MIT           │
+│ require-from-string                   │ MIT           │
+│ ret                                   │ MIT           │
+│ reusify                               │ MIT           │
+│ rfdc                                  │ MIT           │
+│ safe-regex2                           │ MIT           │
+│ safe-stable-stringify                 │ MIT           │
+│ set-cookie-parser                     │ MIT           │
+│ sonic-boom                            │ MIT           │
+│ statuses                              │ MIT           │
+│ string-width                          │ MIT           │
+│ strip-ansi                            │ MIT           │
+│ thread-stream                         │ MIT           │
+│ toad-cache                            │ MIT           │
+│ toidentifier                          │ MIT           │
+│ wrap-ansi                             │ MIT           │
+│ xtend                                 │ MIT           │
+│ yargs                                 │ MIT           │
+│ zod                                   │ MIT           │
+│ @fontsource/atkinson-hyperlegible     │ OFL-1.1       │
+│ @fontsource/poppins                   │ OFL-1.1       │

@@ -1,0 +1,25 @@
+ISEE — Preview before you visit
+
+Copyright © 2026 Elaine Walsh, Autism & Me (autismandme.ie). All rights reserved.
+
+This repository and everything in it that was written for ISEE — the software, text, designs, data
+models, documents and demonstration content — is proprietary. No licence is granted. You may not copy,
+modify, publish, distribute, sublicense or sell any part of it, or use it to build a competing or
+derivative product or service, without prior written permission from the copyright owner.
+
+Viewing the public demonstration in a browser is permitted. Nothing else is.
+
+Third-party components
+----------------------
+ISEE uses open-source software and fonts that remain under their own licences, including the fonts
+Poppins and Atkinson Hyperlegible (SIL Open Font License 1.1). Those licences apply to those components
+only and are listed in docs/THIRD_PARTY_LICENCES.md (source repository) or in THIRD-PARTY.txt (demo).
+
+Names
+-----
+"ISEE" and "Autism & Me" are used as names of this service and its owner. Trade-mark clearance for
+"ISEE" has not been completed.
+
+Contact: contactautismandme@gmail.com
+
+This notice is a statement of the owner's position, not legal advice.
