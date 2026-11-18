@@ -56,8 +56,9 @@
   }
 
   function normaliseEircode(text) {
-    var m = String(text || '').toUpperCase().replace(/\s+/g, '').match(/[A-Z][0-9][0-9W][0-9A-Z]{4}/);
-    return m ? m[0] : '';
+    // A whole Eircode only, as its own word: three characters (such as X91 or D6W), then four.
+    var m = String(text || '').toUpperCase().match(/(?:^|[^A-Z0-9])([A-Z][0-9][0-9W])\s?([0-9A-Z]{4})(?![A-Z0-9])/);
+    return m ? m[1] + m[2] : '';
   }
 
   function metresBetween(a, b) {
@@ -266,13 +267,14 @@
         (venue.doorLabel ? ', starting at: ' + venue.doorLabel + '.' : '.') }),
       el('div', { class: 'button-row' },
         open,
-        el('a', { href: '/venues/' + venue.slug, text: 'Read the whole guide first' })));
+        el('a', { class: 'button button-secondary', href: '/venues/' + venue.slug, text: 'Read the whole guide first' })));
   }
 
   /* The door opens once, then ISEE takes over. With reduced motion there is no movement at all. */
   function openTheDoor(ui, path) {
     ui.status.textContent = 'The door is open. ISEE is taking over.';
     if (reducedMotion()) { go(path); return; }
+    if (ui.frontView.querySelector('.street-doorway')) return;
     var doorway = el('div', { class: 'street-doorway', 'aria-hidden': 'true' },
       el('p', { class: 'street-doorway-name', text: 'ISEE' }),
       el('p', { class: 'street-doorway-line', text: 'Preview before you visit' }),
@@ -281,7 +283,10 @@
     ui.frontView.append(doorway);
     void doorway.offsetWidth; // let the closed door paint before it opens
     doorway.classList.add('is-open');
-    window.setTimeout(function () { go(path); }, 900);
+    var mine = ui.id;
+    window.setTimeout(function () {
+      if (mine === runId && document.contains(ui.title)) go(path); // not if the window was closed meanwhile
+    }, 900);
   }
 
   /* ---------- made-up venues: drawings only ---------- */
@@ -403,14 +408,21 @@
       if (early) showGuide(ui, early, false); else showNoGuide(ui);
     }
 
-    function onAuthFailed() { fail('Google did not accept the map key for this website. The map and street view cannot be shown here.'); }
-    document.addEventListener('isee-street-auth-failed', onAuthFailed, { once: true });
+    // Google can reject the key at any moment, even after the map has started to draw.
+    // So this listens for as long as this window is the one on screen.
+    var denied = false;
+    function onAuthFailed() {
+      if (stale()) { document.removeEventListener('isee-street-auth-failed', onAuthFailed); return; }
+      denied = true;
+      fail('Google did not accept the map key for this website. The map and street view cannot be shown here.');
+    }
+    document.addEventListener('isee-street-auth-failed', onAuthFailed);
 
     loadGoogle().then(function (g) {
-      if (stale()) return null;
+      if (stale() || denied) return null;
       if (authFailed) { onAuthFailed(); return null; }
       return new g.Geocoder().geocode({ address: query, region: REGION.toLowerCase() }).then(function (response) {
-        if (stale()) return;
+        if (stale() || denied) return;
         var result = response && response.results && response.results[0];
         var types = (result && result.types) || [];
         if (!result || !result.geometry || types.indexOf('country') !== -1) {
@@ -421,6 +433,7 @@
         var address = result.formatted_address || query;
         ui.title.textContent = address;
 
+        ui.mapView.replaceChildren();
         var map = new g.Map(ui.mapView, {
           center: point, zoom: 17, mapTypeControl: false, streetViewControl: false,
           fullscreenControl: false, gestureHandling: 'cooperative'
@@ -433,10 +446,11 @@
         if (venue) showGuide(ui, venue, false); else showNoGuide(ui);
 
         return findPanorama(g, point).then(function (found) {
-          if (stale()) return;
+          if (stale() || denied) return;
           var data = found && found.data;
           if (!data || !data.location || !data.location.pano) throw { code: 'ZERO_RESULTS' };
           var from = data.location.latLng ? plain(data.location.latLng) : point;
+          ui.frontView.replaceChildren();
           new g.StreetViewPanorama(ui.frontView, {
             pano: data.location.pano,
             pov: { heading: headingBetween(from, point), pitch: 0 },
@@ -448,7 +462,7 @@
           ui.frontCaption.textContent = 'Google Street View, facing the address. The picture may be some years old, and the pin may not be exactly at the door.';
           ui.status.textContent = 'Showing the map and the front view.';
         }).catch(function (err) {
-          if (stale()) return;
+          if (stale() || denied) return;
           message(ui.frontView, err && err.code === 'ZERO_RESULTS'
             ? 'Google has no street view at this spot.'
             : 'The front view could not be loaded.');
@@ -456,17 +470,16 @@
           ui.status.textContent = 'Showing the map. There is no front view for this place.';
         });
       }, function (err) {
+        if (denied) return;
+        if (err && err.code === 'REQUEST_DENIED') { onAuthFailed(); return; }
         fail(err && err.code === 'ZERO_RESULTS'
           ? 'No place was found for that Eircode or address. Check it and try again.'
           : 'The place could not be looked up just now. Try again in a moment.');
       });
     }, function () {
       fail('Google Maps could not be loaded. Check your connection and try again.');
-    }).then(function () {
-      document.removeEventListener('isee-street-auth-failed', onAuthFailed);
-    }, function () {
-      document.removeEventListener('isee-street-auth-failed', onAuthFailed);
-      fail('The map could not be shown just now. Try again in a moment.');
+    }).catch(function () {
+      if (!denied) fail('The map could not be shown just now. Try again in a moment.');
     });
   }
 
