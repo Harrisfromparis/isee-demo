@@ -1,0 +1,62 @@
+/*
+ * ISEE — Eircode and address search ("see it from the street").
+ * © 2026 Elaine Walsh, Autism & Me. All rights reserved.
+ * Uses the ISEE design tokens already on the page. No new colours or fonts.
+ */
+.street-search { margin-top: var(--isee-space-6); }
+.street-search h2 { margin-top: 0; }
+.street-search form { max-width: var(--isee-measure); }
+.street-search input[type="text"] { width: 100%; }
+.street-error { color: var(--isee-error-text); font-weight: 700; margin: 0 0 var(--isee-space-2); }
+
+.street-samples { margin-top: var(--isee-space-5); padding-top: var(--isee-space-4); border-top: 1px solid var(--isee-border); }
+.street-samples h3 { margin-top: 0; }
+.street-samples ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--isee-space-3); }
+
+/* The window: a panel on the page, not a pop-up, so it also works when ISEE is embedded. */
+.street-window { margin-top: var(--isee-space-5); border: 2px solid var(--isee-navy); border-radius: var(--isee-radius); background: var(--isee-surface-raised); overflow: hidden; }
+.street-window:focus { outline: none; }
+.street-window:focus-visible { outline: var(--isee-focus-width) solid var(--isee-focus-outer); outline-offset: 2px; }
+.street-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--isee-space-3); padding: var(--isee-space-3) var(--isee-space-4); background: var(--isee-navy); color: var(--isee-cream); }
+.street-bar h3 { margin: 0; color: var(--isee-cream); font-size: 1.15rem; overflow-wrap: anywhere; }
+.street-bar h3:focus { outline: none; }
+.street-bar h3:focus-visible { outline: var(--isee-focus-width) solid var(--isee-cream); outline-offset: 2px; }
+.street-body { padding: var(--isee-space-4); }
+.street-status { margin: 0 0 var(--isee-space-4); font-weight: 700; }
+.street-status:empty { display: none; }
+
+.street-panes { display: grid; gap: var(--isee-space-4); grid-template-columns: 1fr; }
+@media (min-width: 48rem) { .street-panes { grid-template-columns: 1fr 1fr; } }
+.street-pane { margin: 0; min-width: 0; }
+.street-pane h4 { margin: 0 0 var(--isee-space-2); }
+.street-view { position: relative; aspect-ratio: 4 / 3; min-height: 15rem; width: 100%; border: 1px solid var(--isee-border); border-radius: var(--isee-radius); background: var(--isee-surface-quiet); overflow: hidden; }
+.street-view > svg { display: block; width: 100%; height: 100%; }
+.street-view-message { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: var(--isee-space-4); text-align: center; margin: 0; }
+.street-caption { font-size: var(--isee-font-size-small); color: var(--isee-text-muted); margin: var(--isee-space-2) 0 0; }
+
+.street-door { margin-top: var(--isee-space-5); padding-top: var(--isee-space-4); border-top: 1px solid var(--isee-border); max-width: var(--isee-measure); }
+.street-door .button-row { margin-bottom: 0; align-items: center; }
+
+/* The door. It moves once, only after "Open the door" is pressed. */
+.street-doorway { position: absolute; inset: 0; z-index: 5; background: var(--isee-cream); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; perspective: 60rem; overflow: hidden; }
+.street-doorway-name { font-family: var(--isee-font-heading); font-weight: 700; font-size: 2rem; color: var(--isee-navy); margin: 0; }
+.street-doorway-line { margin: 0; color: var(--isee-navy); }
+.street-leaf { position: absolute; top: 0; bottom: 0; width: 50%; background: var(--isee-navy); border: 3px solid var(--isee-cream); transition: transform .7s ease-in; }
+.street-leaf::after { content: ""; position: absolute; top: 50%; width: .5rem; height: 3rem; margin-top: -1.5rem; border-radius: .25rem; background: var(--isee-cream); }
+.street-leaf-left { left: 0; transform-origin: left center; }
+.street-leaf-left::after { right: .75rem; }
+.street-leaf-right { right: 0; transform-origin: right center; }
+.street-leaf-right::after { left: .75rem; }
+.street-doorway.is-open .street-leaf-left { transform: rotateY(-88deg); }
+.street-doorway.is-open .street-leaf-right { transform: rotateY(88deg); }
+@media (prefers-reduced-motion: reduce) { .street-leaf { transition: none; } }
+
+@media print { .street-search { display: none; } }
+
+/* Secondary buttons made with <button>: white with navy text, and readable on hover. */
+.street-search button.button-secondary,
+.street-search a.button-secondary,
+.street-search a.button-secondary:visited { background: var(--isee-white); color: var(--isee-navy); }
+.street-search button.button-secondary:hover,
+.street-search a.button-secondary:hover { background: var(--isee-sage-tint); color: var(--isee-navy); }
+.street-links { margin: 0 0 var(--isee-space-4); }
