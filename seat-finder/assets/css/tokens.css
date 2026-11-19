@@ -1,0 +1,78 @@
+/*
+ * ISEE brand tokens — Autism & Me.
+ * Navy-led with orange, sage green and cream (see docs/ARCHITECTURE.md ADR-008).
+ * Change a colour here and it changes everywhere. Every text/background pair that the
+ * interface uses is listed in apps/web/src/brand/pairs.json and contrast-tested in
+ * apps/web/test/contrast.test.ts. Add a pair there before using a new combination.
+ *
+ * Rules: meaning is never carried by colour alone (every status has an icon and a word);
+ * no white text on orange; no puzzle-piece imagery; no autoplay, no flashing.
+ */
+:root {
+  /* brand */
+  --isee-navy: #16283A;
+  --isee-navy-soft: #2B4059;
+  --isee-cream: #F8F5EF;
+  --isee-orange: #F2863D;
+  --isee-orange-text: #9A4208; /* orange family, dark enough to be text on cream and white */
+  --isee-sage: #9CAF9C;
+  --isee-sage-tint: #E7EDE7;
+  --isee-white: #FFFFFF;
+  --isee-black: #000000;
+
+  /* text and surfaces */
+  --isee-text: var(--isee-navy);
+  --isee-text-muted: #44566B;
+  --isee-surface: var(--isee-cream);
+  --isee-surface-raised: var(--isee-white);
+  --isee-surface-quiet: var(--isee-sage-tint);
+  --isee-border: #6B7C8F;
+  --isee-link: #0F3B6E;
+  --isee-link-visited: #4A2A6B;
+
+  /* focus: two-colour ring so it shows on light and dark backgrounds */
+  --isee-focus-inner: var(--isee-white);
+  --isee-focus-outer: #0B5CAD;
+  --isee-focus-width: 3px;
+
+  /* status — always paired with an icon and a word */
+  --isee-status-confirmed-bg: #E3F1E6;
+  --isee-status-confirmed-text: #174A2A;
+  --isee-status-unknown-bg: #ECEFF3;
+  --isee-status-unknown-text: #2B3A4A;
+  --isee-status-unavailable-bg: #F8E4E1;
+  --isee-status-unavailable-text: #7A1C12;
+  --isee-status-closed-bg: #FCEBD9;
+  --isee-status-closed-text: #7A3606;
+  --isee-demo-bg: #FFF4C2;
+  --isee-demo-text: #3D2F00;
+  --isee-error-text: #8A1C12;
+
+  /* typography — Poppins headings, Atkinson Hyperlegible body, system fallbacks, no forced download */
+  --isee-font-heading: "Poppins", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  --isee-font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  --isee-font-size-body: 1.125rem; /* 18px at default settings; scales with the visitor's own font size */
+  --isee-font-size-small: 1rem; /* never below 16px */
+  --isee-line-height: 1.6;
+  --isee-measure: 65ch;
+
+  /* spacing (rem so it grows with text) */
+  --isee-space-1: 0.25rem;
+  --isee-space-2: 0.5rem;
+  --isee-space-3: 0.75rem;
+  --isee-space-4: 1rem;
+  --isee-space-5: 1.5rem;
+  --isee-space-6: 2rem;
+  --isee-space-7: 3rem;
+  --isee-radius: 0.5rem;
+
+  /* targets: product target 44px; WCAG 2.2 AA minimum is 24px */
+  --isee-target-min: 2.75rem;
+
+  /* motion: off unless the visitor has no reduced-motion preference, and never essential */
+  --isee-motion-fast: 120ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --isee-motion-fast: 0ms; }
+}

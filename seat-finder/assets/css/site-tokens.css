@@ -1,0 +1,9 @@
+/*
+ * Tokens that belong to this website only. The shared brand tokens stay in apps/web/src/brand/tokens.css and are copied
+ * unchanged at build time. This file is loaded after them.
+ * --isee-dusty-blue is the Autism & Me brand-kit dusty blue, used for the alternate section bands.
+ * Text on dusty blue and on orange is always navy. Never white or cream (see src/brand/pairs.json).
+ */
+:root {
+  --isee-dusty-blue: #8FAECA;
+}

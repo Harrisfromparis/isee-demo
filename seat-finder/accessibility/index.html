@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility · iSEE</title>
+<meta name="description" content="What the iSEE website does for accessibility, what has not been tested yet, and our WCAG 2.2 AA target.">
+<meta name="robots" content="noindex">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="author" content="Elaine Walsh, Autism &amp; Me">
+<link rel="canonical" href="https://harrisfromparis.github.io/isee-demo/seat-finder/accessibility/">
+<meta property="og:site_name" content="iSEE by Autism &amp; Me">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IE">
+<meta property="og:title" content="Accessibility · iSEE">
+<meta property="og:description" content="What the iSEE website does for accessibility, what has not been tested yet, and our WCAG 2.2 AA target.">
+<meta property="og:url" content="https://harrisfromparis.github.io/isee-demo/seat-finder/accessibility/">
+<meta property="og:image" content="https://harrisfromparis.github.io/isee-demo/seat-finder/assets/img/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="iSEE, Preview before you visit. Find your way to your seat, with no beacons and no new markers.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/isee-demo/seat-finder/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/tokens.css">
+<link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/site-tokens.css">
+<link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/fonts.css">
+<link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/site.css">
+<script type="module" src="/isee-demo/seat-finder/assets/js/nav.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a><header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="/isee-demo/seat-finder/">
+      <span class="wordmark-name">iSEE</span>
+      <span class="wordmark-line">Preview before you visit</span>
+    </a>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" hidden>Menu</button>
+    <nav class="site-nav" aria-label="Main">
+      <ul id="site-menu">
+        <li><a href="/isee-demo/seat-finder/#how-it-works">How it works</a></li><li><a href="/isee-demo/seat-finder/demo/">Try the demo</a></li><li><a href="/isee-demo/seat-finder/venues/">Venues</a></li><li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li><li><a href="/isee-demo/seat-finder/accessibility/" aria-current="page">Accessibility</a></li>
+      </ul>
+    </nav>
+  </div>
+</header><main id="main" tabindex="-1"><section class="band band-blue" aria-label="For everyone"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><p class="band-label">For everyone</p></div>
+    <div class="band-body">
+  <h1>Designed for everyone</h1>
+  <p class="lead">iSEE is built so anyone can use it in the way that suits them. There is nothing to declare and nothing to switch on. Every way of using it is open to everyone.</p>
+  <p>This page describes those ways, what we aim for, and what has and has not been tested.</p></div>
+  </div></section><section class="band band-orange band-tall" aria-labelledby="ways-title"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><h2 class="band-label" id="ways-title">Ways to use iSEE</h2></div>
+    <div class="band-body">
+      <ul>
+        <li><strong>Read it or hear it.</strong> Every route step is written as text. A map is optional. A step is read aloud only when you ask. Nothing speaks or plays by itself.</li>
+        <li><strong>Step by step or as an overview.</strong> See one step at a time, or the whole route at once. Go back, repeat a step, or say you are somewhere else.</li>
+        <li><strong>With or without stairs.</strong> Choose the standard route, the shortest way, or the step-free route, which never uses stairs or paths that have not been checked.</li>
+        <li><strong>Keyboard, touch, mouse or screen reader.</strong> Everything works with the keyboard. The focus ring is a two-colour outline that shows on light and dark backgrounds. Pages use headings, landmarks and lists, and there is a skip link on every page.</li>
+        <li><strong>Your own size and pace.</strong> Text is 18 pixels by default, never below 16, and scales if you change your browser's text size. Pages reflow down to 320 CSS pixels wide with no sideways scrolling. Buttons and links are at least 44 pixels high. Nothing is timed and nothing moves on by itself.</li>
+        <li><strong>Calm by design.</strong> There is no flashing, no autoplay and no parallax. If your device asks for reduced motion, the site uses none. Meaning is never carried by colour alone: every status has an icon and a word.</li>
+        <li><strong>With or without JavaScript.</strong> Every page makes sense with JavaScript turned off. The route planner is the only part that needs it.</li>
+      </ul></div>
+  </div></section><section class="band band-blue" aria-labelledby="target-title"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><h2 class="band-label" id="target-title">Our target</h2></div>
+    <div class="band-body">
+      <p>We aim to meet the Web Content Accessibility Guidelines (WCAG) 2.2, level AA. This is a target. It is not a certification, and nobody outside Autism &amp; Me has audited this website.</p></div>
+  </div></section><section class="band band-orange band-tall" aria-labelledby="limits-title"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><h2 class="band-label" id="limits-title">What has and has not been tested</h2></div>
+    <div class="band-body">
+      <ul>
+        <li>Not yet tested by people using screen readers, on phones or in a venue.</li>
+        <li>Checks so far are automated checks and our own review. Automated checks find only some problems.</li>
+        <li>The only venue is a made-up demo. No real venue data has been checked.</li>
+        <li>Maps are optional. If a map is shown, the written directions are the version to rely on.</li>
+      </ul></div>
+  </div></section><section class="band band-blue" aria-labelledby="feedback-title"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><h2 class="band-label" id="feedback-title">Tell us what works</h2></div>
+    <div class="band-body"><p>If something on this website does not work as you would expect, email <a href="mailto:contactautismandme@gmail.com">contactautismandme@gmail.com</a>. You do not need to share any personal details.</p></div>
+  </div></section></main><footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-tagline">Change the environment, not the child.</p>
+    <nav aria-label="Footer">
+      <ul class="footer-links">
+        <li><a href="/isee-demo/seat-finder/privacy/">Privacy</a></li>
+        <li><a href="/isee-demo/seat-finder/accessibility/">Accessibility</a></li>
+        <li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li>
+        <li><a href="/isee-demo/seat-finder/venues/">Venues</a></li>
+      </ul>
+    </nav>
+    <p class="status-line">iSEE is in development. There are no live venues. The only venue is a made-up demo. The phone-sensor guidance and the camera-assisted pilot are not available and have not been tested on phones or in venues.</p>
+    <p class="small">iSEE is a service by Autism &amp; Me.</p>
+    <p class="small">© 2026 Elaine Walsh, Autism &amp; Me. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

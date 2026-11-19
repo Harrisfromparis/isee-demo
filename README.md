@@ -16,3 +16,8 @@ Open-source components and fonts used inside the page remain under their own lic
 [THIRD-PARTY.txt](THIRD-PARTY.txt).
 
 Contact: contactautismandme@gmail.com
+
+## Seat finder
+
+`seat-finder/` is a static build of the iSEE beacon-free seat finder (made-up demo venue only).
+It is served at https://harrisfromparis.github.io/isee-demo/seat-finder/ . The root `404.html` belongs to it.

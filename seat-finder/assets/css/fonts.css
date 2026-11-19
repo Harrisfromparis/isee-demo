@@ -1,0 +1,10 @@
+/*
+ * Self-hosted fonts: Poppins (headings) and Atkinson Hyperlegible (body), both SIL Open Font License 1.1.
+ * Licences: /assets/fonts/LICENSE-*.txt. font-display: swap so text is readable at once with the system
+ * fallback and nothing is blocked while a font loads. No third-party request is ever made.
+ * Public pages load this through public-site.css. The layout should also link it for staff pages.
+ */
+@font-face { font-family: "Atkinson Hyperlegible"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/atkinson-hyperlegible-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Atkinson Hyperlegible"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/atkinson-hyperlegible-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/poppins-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/poppins-latin-700-normal.woff2") format("woff2"); }
