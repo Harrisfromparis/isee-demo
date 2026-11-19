@@ -1,9 +1,23 @@
 /*
  * Tokens that belong to this website only. The shared brand tokens stay in apps/web/src/brand/tokens.css and are copied
  * unchanged at build time. This file is loaded after them.
- * --isee-dusty-blue is the Autism & Me brand-kit dusty blue, used for the alternate section bands.
- * Text on dusty blue and on orange is always navy. Never white or cream (see src/brand/pairs.json).
+ * The timber palette: a warm white page, a deeper sand for alternate sections, oak for thin rules, deep teal for accents.
+ * Text is always deep navy. There is no dusty blue and no orange band or block. Orange is only ever a tiny highlight in a drawing.
+ * Every text/background pair is listed in src/brand/pairs.json and contrast-tested.
  */
 :root {
-  --isee-dusty-blue: #8FAECA;
+  --isee-warm-white: #F8F5EF;
+  --isee-sand: #EFE7DC;
+  --isee-oak: #B8895A;       /* thin rules and decoration only: 2.8:1 on warm white, never used for text */
+  --isee-oak-line: #D8C4AA;  /* card borders */
+  --isee-oak-deep: #6B4526;  /* text-safe timber accent */
+  --isee-teal-deep: #0F4C4A; /* eyebrow labels, accent walls */
+  --isee-teal-tint: #DCE8E4; /* quiet fills */
+  --isee-timber: #C9A27A;    /* illustration walls */
+  --isee-timber-light: #E4CFB4;
+  --isee-timber-dark: #8C6239;
+  --isee-shadow: 0 1px 2px rgba(22, 40, 58, 0.06), 0 6px 18px rgba(22, 40, 58, 0.07);
+  --isee-radius-card: 0.875rem;
+  --isee-radius-pill: 999px;
+  --isee-content: 68.75rem;
 }

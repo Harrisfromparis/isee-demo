@@ -1,7 +1,10 @@
 .video-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; margin-block: 1.5rem; }
 @media (min-width: 900px) { .video-grid { grid-template-columns: 1fr 1fr; } .video-wide { grid-column: 1 / -1; } }
-.video-card { background: #fff; border: 1px solid var(--isee-navy, #16283A); border-radius: 12px; padding: 1rem; }
+.video-card { background: #fff; border: 1px solid var(--isee-oak-line, #d9c7ad); border-radius: 14px; box-shadow: 0 2px 10px rgba(22,40,58,.06); padding: 1rem; }
 .video-card video { display: block; width: 100%; height: auto; border-radius: 8px; background: #000; }
 .video-card h3 { margin: 0.9rem 0 0.3rem; }
 .video-card p { margin: 0.3rem 0; }
 .video-note { font-weight: 700; }
+
+.is-embedded .wil-intro { display: none; }
+.is-embedded .video-grid { margin-top: 0; }

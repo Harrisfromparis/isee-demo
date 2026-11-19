@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
 <rect width="1200" height="630" fill="#F8F5EF"/>
+<rect x="0" y="446" width="1200" height="184" fill="#EFE7DC"/>
+<rect x="64" y="288" width="96" height="6" rx="3" fill="#B8895A"/>
 <text x="64" y="190" font-family="Poppins, Segoe UI, system-ui, Arial, sans-serif" font-size="140" font-weight="700" fill="#16283A">iSEE</text>
 <text x="64" y="260" font-family="Poppins, Segoe UI, system-ui, Arial, sans-serif" font-size="44" font-weight="600" fill="#16283A">Preview before you visit</text>
 <text x="64" y="332" font-family="Poppins, Segoe UI, system-ui, Arial, sans-serif" font-size="32" fill="#16283A">See a place before you visit.</text>
