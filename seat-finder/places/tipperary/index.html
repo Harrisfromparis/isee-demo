@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Places in County Tipperary · iSEE</title>
+<meta name="description" content="Places in County Tipperary from OpenStreetMap, grouped by category, with address and Eircode where the open data has them. None has an iSEE guide yet.">
+<meta name="robots" content="noindex">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'">
+<meta name="author" content="Elaine Walsh, Autism &amp; Me">
+<link rel="canonical" href="https://harrisfromparis.github.io/isee-demo/seat-finder/places/tipperary/">
+<meta property="og:site_name" content="iSEE by Autism &amp; Me">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IE">
+<meta property="og:title" content="Places in County Tipperary · iSEE">
+<meta property="og:description" content="Places in County Tipperary from OpenStreetMap, grouped by category, with address and Eircode where the open data has them. None has an iSEE guide yet.">
+<meta property="og:url" content="https://harrisfromparis.github.io/isee-demo/seat-finder/places/tipperary/">
+<meta property="og:image" content="https://harrisfromparis.github.io/isee-demo/seat-finder/assets/img/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="iSEE, Preview before you visit. Find your way to your seat, with no beacons and no new markers.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/isee-demo/seat-finder/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/tokens.css">
+<link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/site-tokens.css">
+<link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/fonts.css">
+<link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/site.css">
+<script type="module" src="/isee-demo/seat-finder/assets/js/nav.js"></script><script type="module" src="/isee-demo/seat-finder/assets/js/places.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a><header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="/isee-demo/seat-finder/">
+      <span class="wordmark-name">iSEE</span>
+      <span class="wordmark-line">Preview before you visit</span>
+    </a>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" hidden>Menu</button>
+    <nav class="site-nav" aria-label="Main">
+      <ul id="site-menu">
+        <li><a href="/isee-demo/seat-finder/#how-it-works">How it works</a></li><li><a href="/isee-demo/seat-finder/demo/">Try the demo</a></li><li><a href="/isee-demo/seat-finder/venues/">Venues</a></li><li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li><li><a href="/isee-demo/seat-finder/accessibility/">Accessibility</a></li>
+      </ul>
+    </nav>
+  </div>
+</header><main id="main" tabindex="-1"><section class="band band-blue band-tall" aria-label="Places"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><p class="band-label">Places</p></div>
+    <div class="band-body">
+  <p class="crumb"><a href="/isee-demo/seat-finder/places/">Places in Ireland</a></p>
+  <h1>Places in County Tipperary</h1>
+  <p class="lead">Anyone can look up a place before they visit, in the way that suits them: reading, filtering or browsing by county and category.</p>
+  <p>Every place on this page is listed as having <strong>no iSEE guide yet</strong>. A place has a guide only after it has been checked on site.</p></div>
+  </div></section>
+<section class="band band-orange band-tall" aria-labelledby="places-find-title"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><h2 class="band-label" id="places-find-title">Find places</h2></div>
+    <div class="band-body">
+  <div id="places-root" data-page="county" data-county="tipperary" data-county-name="Tipperary" data-base="/isee-demo/seat-finder/" data-page-size="50">
+    <p class="places-state" id="places-state" role="status" aria-live="polite">Loading the list.</p>
+    <noscript><p class="notice-plain">The list of places needs JavaScript to load. These are the categories it holds.</p></noscript>
+    <div id="places-static"><ul class="plain-list category-names"><li data-category="health">Health and therapy</li><li data-category="education">Schools and education</li><li data-category="worship">Places of worship</li><li data-category="libraries">Libraries</li><li data-category="arts">Theatres, cinemas and arts</li><li data-category="cafes">Cafés</li><li data-category="food">Restaurants, pubs and takeaways</li><li data-category="public">Public services</li><li data-category="stay">Hotels and places to stay</li><li data-category="leisure">Sport and leisure</li><li data-category="shops">Shops</li><li data-category="offices">Offices and business services</li><li data-category="trades">Trades and industry</li></ul></div>
+    <div class="places-app" id="places-app" hidden>
+      <div role="group" aria-labelledby="places-cat-label" class="places-cats-group">
+        <p id="places-cat-label" class="places-label">Category</p>
+        <div class="places-cats" id="places-cats"></div>
+      </div>
+      <div class="field places-filter"><label for="places-filter">Filter by name, address or Eircode</label>
+        <input id="places-filter" type="search" autocomplete="off" maxlength="80"></div>
+      <p class="places-count" id="places-count" role="status" aria-live="polite"></p>
+      <ul class="plain-list places-list" id="places-list"></ul>
+      <p><button type="button" class="button button-secondary" id="places-more" hidden>Show 50 more</button></p>
+    </div>
+  </div></div>
+  </div></section>
+<section class="band band-blue band-tall" aria-labelledby="places-about-title"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><h2 class="band-label" id="places-about-title">About this list</h2></div>
+    <div class="band-body">
+    <p>Place names and addresses come from OpenStreetMap. &copy; OpenStreetMap contributors, available under the Open Database Licence. The licence is described at openstreetmap.org/copyright.</p>
+    <p>List generated: <span data-generated>the date will appear here once the list has loaded</span>.</p>
+    <p>Not every place in Ireland is in this list, and an Eircode is shown only where the open data has one.</p>
+    <p>Being listed here does not mean a place has an iSEE guide or has been checked.</p>
+    <p>This list covers the 26 counties that use Eircodes. Northern Ireland is not included.</p>
+    <p>To correct or remove a listing, tell us. Email <a href="mailto:contactautismandme@gmail.com">contactautismandme@gmail.com</a>. You do not need to share any personal details.</p></div>
+  </div></section></main><footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-tagline">Change the environment, not the child.</p>
+    <nav aria-label="Footer">
+      <ul class="footer-links">
+        <li><a href="/isee-demo/seat-finder/privacy/">Privacy</a></li>
+        <li><a href="/isee-demo/seat-finder/accessibility/">Accessibility</a></li>
+        <li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li>
+        <li><a href="/isee-demo/seat-finder/venues/">Venues</a></li>
+      </ul>
+    </nav>
+    <p class="status-line">iSEE is in development. There are no live venues. The only venue is a made-up demo. The phone-sensor guidance and the camera-assisted pilot are not available and have not been tested on phones or in venues.</p>
+    <p class="small">iSEE is a service by Autism &amp; Me.</p>
+    <p class="small">© 2026 Elaine Walsh, Autism &amp; Me. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

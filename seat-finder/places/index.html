@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Places in Ireland · iSEE</title>
+<meta name="description" content="Browse places in all 26 counties of the Republic of Ireland by category, from OpenStreetMap. Every place is listed as having no iSEE guide yet.">
+<meta name="robots" content="noindex">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'">
+<meta name="author" content="Elaine Walsh, Autism &amp; Me">
+<link rel="canonical" href="https://harrisfromparis.github.io/isee-demo/seat-finder/places/">
+<meta property="og:site_name" content="iSEE by Autism &amp; Me">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IE">
+<meta property="og:title" content="Places in Ireland · iSEE">
+<meta property="og:description" content="Browse places in all 26 counties of the Republic of Ireland by category, from OpenStreetMap. Every place is listed as having no iSEE guide yet.">
+<meta property="og:url" content="https://harrisfromparis.github.io/isee-demo/seat-finder/places/">
+<meta property="og:image" content="https://harrisfromparis.github.io/isee-demo/seat-finder/assets/img/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="iSEE, Preview before you visit. Find your way to your seat, with no beacons and no new markers.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/isee-demo/seat-finder/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/tokens.css">
+<link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/site-tokens.css">
+<link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/fonts.css">
+<link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/site.css">
+<script type="module" src="/isee-demo/seat-finder/assets/js/nav.js"></script><script type="module" src="/isee-demo/seat-finder/assets/js/places.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a><header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="/isee-demo/seat-finder/">
+      <span class="wordmark-name">iSEE</span>
+      <span class="wordmark-line">Preview before you visit</span>
+    </a>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" hidden>Menu</button>
+    <nav class="site-nav" aria-label="Main">
+      <ul id="site-menu">
+        <li><a href="/isee-demo/seat-finder/#how-it-works">How it works</a></li><li><a href="/isee-demo/seat-finder/demo/">Try the demo</a></li><li><a href="/isee-demo/seat-finder/venues/">Venues</a></li><li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li><li><a href="/isee-demo/seat-finder/accessibility/">Accessibility</a></li>
+      </ul>
+    </nav>
+  </div>
+</header><main id="main" tabindex="-1"><section class="band band-blue band-tall" aria-label="Places"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><p class="band-label">Places</p></div>
+    <div class="band-body">
+  <div id="places-root" data-page="index" data-base="/isee-demo/seat-finder/">
+    <h1>Places in Ireland</h1>
+    <p class="lead">Anyone can look up a place before they visit, in the way that suits them: reading, filtering or browsing by county and category.</p>
+    <p>This is a list of places across the Republic of Ireland: GP practices, shops, schools, libraries, theatres, cafés and more. Every place is listed as having <strong>no iSEE guide yet</strong>. If you run one of them, you can ask for a guide.</p>
+    <p class="places-state" id="places-state" role="status" aria-live="polite">Checking whether the list is ready.</p>
+    <noscript><p class="notice-plain">The counts and the search need JavaScript. You can still open any county below. Its page says what the list holds.</p></noscript>
+  </div></div>
+  </div></section>
+<section class="band band-orange" aria-labelledby="places-search-title"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><h2 class="band-label" id="places-search-title">Search</h2></div>
+    <div class="band-body">
+  <form class="places-search" id="places-search" role="search" aria-labelledby="places-search-title" novalidate hidden>
+    <p>Choose a county first. Then search its places by name, town or Eircode.</p>
+    <div class="field"><label for="places-county">County</label>
+      <select id="places-county"><option value="">Choose a county</option><option value="carlow">Carlow</option><option value="cavan">Cavan</option><option value="clare">Clare</option><option value="cork">Cork</option><option value="donegal">Donegal</option><option value="dublin">Dublin</option><option value="galway">Galway</option><option value="kerry">Kerry</option><option value="kildare">Kildare</option><option value="kilkenny">Kilkenny</option><option value="laois">Laois</option><option value="leitrim">Leitrim</option><option value="limerick">Limerick</option><option value="longford">Longford</option><option value="louth">Louth</option><option value="mayo">Mayo</option><option value="meath">Meath</option><option value="monaghan">Monaghan</option><option value="offaly">Offaly</option><option value="roscommon">Roscommon</option><option value="sligo">Sligo</option><option value="tipperary">Tipperary</option><option value="waterford">Waterford</option><option value="westmeath">Westmeath</option><option value="wexford">Wexford</option><option value="wicklow">Wicklow</option></select></div>
+    <div class="field"><label for="places-query">Search by name, town or Eircode</label>
+      <input id="places-query" type="search" autocomplete="off" maxlength="80"></div>
+    <p class="places-form-error" id="places-form-error" role="alert"></p>
+    <button type="submit" class="button button-cta">Search this county</button>
+  </form>
+  <noscript><p>Searching needs JavaScript. Open a county below to see what it holds.</p></noscript></div>
+  </div></section>
+<section class="band band-blue band-tall" aria-labelledby="places-counties-title"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><h2 class="band-label" id="places-counties-title">Counties</h2></div>
+    <div class="band-body">
+  <p>There are 26 counties. Each link opens that county's page.</p>
+  <ul class="plain-list county-grid"><li><a class="county-link" href="/isee-demo/seat-finder/places/carlow/"><span class="county-name">Carlow</span> <span class="county-total small" data-total="carlow"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/cavan/"><span class="county-name">Cavan</span> <span class="county-total small" data-total="cavan"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/clare/"><span class="county-name">Clare</span> <span class="county-total small" data-total="clare"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/cork/"><span class="county-name">Cork</span> <span class="county-total small" data-total="cork"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/donegal/"><span class="county-name">Donegal</span> <span class="county-total small" data-total="donegal"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/dublin/"><span class="county-name">Dublin</span> <span class="county-total small" data-total="dublin"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/galway/"><span class="county-name">Galway</span> <span class="county-total small" data-total="galway"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/kerry/"><span class="county-name">Kerry</span> <span class="county-total small" data-total="kerry"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/kildare/"><span class="county-name">Kildare</span> <span class="county-total small" data-total="kildare"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/kilkenny/"><span class="county-name">Kilkenny</span> <span class="county-total small" data-total="kilkenny"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/laois/"><span class="county-name">Laois</span> <span class="county-total small" data-total="laois"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/leitrim/"><span class="county-name">Leitrim</span> <span class="county-total small" data-total="leitrim"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/limerick/"><span class="county-name">Limerick</span> <span class="county-total small" data-total="limerick"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/longford/"><span class="county-name">Longford</span> <span class="county-total small" data-total="longford"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/louth/"><span class="county-name">Louth</span> <span class="county-total small" data-total="louth"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/mayo/"><span class="county-name">Mayo</span> <span class="county-total small" data-total="mayo"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/meath/"><span class="county-name">Meath</span> <span class="county-total small" data-total="meath"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/monaghan/"><span class="county-name">Monaghan</span> <span class="county-total small" data-total="monaghan"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/offaly/"><span class="county-name">Offaly</span> <span class="county-total small" data-total="offaly"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/roscommon/"><span class="county-name">Roscommon</span> <span class="county-total small" data-total="roscommon"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/sligo/"><span class="county-name">Sligo</span> <span class="county-total small" data-total="sligo"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/tipperary/"><span class="county-name">Tipperary</span> <span class="county-total small" data-total="tipperary"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/waterford/"><span class="county-name">Waterford</span> <span class="county-total small" data-total="waterford"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/westmeath/"><span class="county-name">Westmeath</span> <span class="county-total small" data-total="westmeath"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/wexford/"><span class="county-name">Wexford</span> <span class="county-total small" data-total="wexford"></span></a></li><li><a class="county-link" href="/isee-demo/seat-finder/places/wicklow/"><span class="county-name">Wicklow</span> <span class="county-total small" data-total="wicklow"></span></a></li></ul></div>
+  </div></section>
+<section class="band band-orange" aria-labelledby="places-categories-title"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><h2 class="band-label" id="places-categories-title">Categories</h2></div>
+    <div class="band-body">
+  <p>Places are grouped into 13 categories. Open a county to choose one.</p>
+  <ul class="plain-list category-names"><li>Health and therapy <span class="small" data-category-total="health"></span></li><li>Schools and education <span class="small" data-category-total="education"></span></li><li>Places of worship <span class="small" data-category-total="worship"></span></li><li>Libraries <span class="small" data-category-total="libraries"></span></li><li>Theatres, cinemas and arts <span class="small" data-category-total="arts"></span></li><li>Cafés <span class="small" data-category-total="cafes"></span></li><li>Restaurants, pubs and takeaways <span class="small" data-category-total="food"></span></li><li>Public services <span class="small" data-category-total="public"></span></li><li>Hotels and places to stay <span class="small" data-category-total="stay"></span></li><li>Sport and leisure <span class="small" data-category-total="leisure"></span></li><li>Shops <span class="small" data-category-total="shops"></span></li><li>Offices and business services <span class="small" data-category-total="offices"></span></li><li>Trades and industry <span class="small" data-category-total="trades"></span></li></ul></div>
+  </div></section>
+<section class="band band-blue band-tall" aria-labelledby="places-about-title"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><h2 class="band-label" id="places-about-title">About this list</h2></div>
+    <div class="band-body">
+    <p>Place names and addresses come from OpenStreetMap. &copy; OpenStreetMap contributors, available under the Open Database Licence. The licence is described at openstreetmap.org/copyright.</p>
+    <p>List generated: <span data-generated>the date will appear here once the list has loaded</span>.</p>
+    <p>Not every place in Ireland is in this list, and an Eircode is shown only where the open data has one.</p>
+    <p>Being listed here does not mean a place has an iSEE guide or has been checked.</p>
+    <p>This list covers the 26 counties that use Eircodes. Northern Ireland is not included.</p>
+    <p>To correct or remove a listing, tell us. Email <a href="mailto:contactautismandme@gmail.com">contactautismandme@gmail.com</a>. You do not need to share any personal details.</p></div>
+  </div></section></main><footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-tagline">Change the environment, not the child.</p>
+    <nav aria-label="Footer">
+      <ul class="footer-links">
+        <li><a href="/isee-demo/seat-finder/privacy/">Privacy</a></li>
+        <li><a href="/isee-demo/seat-finder/accessibility/">Accessibility</a></li>
+        <li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li>
+        <li><a href="/isee-demo/seat-finder/venues/">Venues</a></li>
+      </ul>
+    </nav>
+    <p class="status-line">iSEE is in development. There are no live venues. The only venue is a made-up demo. The phone-sensor guidance and the camera-assisted pilot are not available and have not been tested on phones or in venues.</p>
+    <p class="small">iSEE is a service by Autism &amp; Me.</p>
+    <p class="small">© 2026 Elaine Walsh, Autism &amp; Me. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -291,3 +291,43 @@ details > summary { cursor: pointer; font-weight: 700; min-height: var(--isee-ta
 .mark-route { stroke: var(--isee-navy); }
 .mark-seat { fill: var(--isee-orange); stroke: var(--isee-navy); stroke-width: 2.5; }
 .mark-base { fill: var(--isee-navy); }
+
+/* places directory */
+input[type="search"], input[type="text"] { font: inherit; color: var(--isee-text); background: var(--isee-white); width: 100%; min-height: var(--isee-target-min); padding: 0.4rem 0.6rem; border: 2px solid var(--isee-border); border-radius: var(--isee-radius); }
+.cols-4 { grid-template-columns: 1fr; }
+@media (min-width: 720px) { .cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.places-state { font-weight: 600; }
+.notice-plain { padding: var(--isee-space-3); background: var(--isee-white); border: 1px solid var(--isee-navy); border-radius: var(--isee-radius); }
+.places-form-error { font-weight: 700; min-height: 1.6em; margin-bottom: var(--isee-space-2); }
+.county-grid { display: grid; gap: var(--isee-space-2) var(--isee-space-4); grid-template-columns: 1fr; max-width: none; }
+@media (min-width: 480px) { .county-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 900px) { .county-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.county-grid li { margin: 0; }
+.county-link, .county-link:visited { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 var(--isee-space-2); min-height: var(--isee-target-min); padding: var(--isee-space-2) var(--isee-space-3); background: var(--isee-white); border: 1px solid var(--isee-border); border-radius: var(--isee-radius); color: var(--isee-link); }
+.county-name { font-weight: 700; }
+.county-total { color: var(--isee-text-muted); }
+.category-names { columns: 1; max-width: none; }
+@media (min-width: 720px) { .category-names { columns: 2; } }
+.category-names li { break-inside: avoid; }
+.places-label { font-weight: 700; margin-bottom: var(--isee-space-2); }
+.places-cats { display: flex; flex-wrap: wrap; gap: var(--isee-space-2); margin-bottom: var(--isee-space-4); }
+.chip-button { font: inherit; letter-spacing: 0.02em; min-height: var(--isee-target-min); padding: 0.35rem 1rem; background: var(--isee-white); color: var(--isee-navy); border: 2px solid var(--isee-navy); border-radius: 999px; cursor: pointer; text-align: left; max-width: 100%; }
+.chip-button:hover { background: var(--isee-sage-tint); }
+.chip-button[aria-pressed="true"] { background: var(--isee-navy); color: var(--isee-cream); font-weight: 700; }
+.chip-button[aria-pressed="true"]::before { content: "\2713\00a0"; }
+.chip-count { white-space: nowrap; }
+.places-filter { max-width: 28rem; }
+.places-count { font-weight: 700; max-width: none; }
+.places-list { display: grid; gap: var(--isee-space-3); grid-template-columns: 1fr; max-width: none; }
+@media (min-width: 900px) { .places-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.places-list > li { margin: 0; min-width: 0; }
+.place-card { padding: var(--isee-space-4); }
+.place-card:focus { outline: var(--isee-focus-width) solid var(--isee-focus-outer); outline-offset: 2px; }
+.place-name { margin: 0 0 var(--isee-space-1); font-size: 1.125rem; }
+.place-type { margin: 0 0 var(--isee-space-2); color: var(--isee-text-muted); }
+.place-facts { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: var(--isee-space-1) var(--isee-space-3); margin: 0 0 var(--isee-space-3); max-width: none; }
+.place-facts dt { font-weight: 700; }
+.place-facts dd { margin: 0; }
+.place-ask { margin-bottom: 0; }
+.place-ask a { display: inline-flex; align-items: center; min-height: var(--isee-target-min); }
