@@ -19,7 +19,7 @@
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="iSEE, Preview before you visit. Find your way to your seat, with no beacons and no new markers.">
+<meta property="og:image:alt" content="iSEE, Preview before you visit. See a place before you visit: look it up, see what it is like, and find your way.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/isee-demo/seat-finder/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/tokens.css">
@@ -38,7 +38,7 @@
     <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" hidden>Menu</button>
     <nav class="site-nav" aria-label="Main">
       <ul id="site-menu">
-        <li><a href="/isee-demo/seat-finder/#how-it-works">How it works</a></li><li><a href="/isee-demo/seat-finder/demo/">Try the demo</a></li><li><a href="/isee-demo/seat-finder/venues/">Venues</a></li><li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li><li><a href="/isee-demo/seat-finder/accessibility/">Accessibility</a></li>
+        <li><a href="/isee-demo/seat-finder/#how-it-works">How it works</a></li><li><a href="/isee-demo/seat-finder/places/">Places</a></li><li><a href="/isee-demo/seat-finder/share/">Share</a></li><li><a href="/isee-demo/seat-finder/demo/">Try the route demo</a></li><li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li>
       </ul>
     </nav>
   </div>
@@ -63,7 +63,7 @@
   <div class="band-inner">
     <div class="band-tab"><h2 class="band-label" id="saved-title">What stays in your browser</h2></div>
     <div class="band-body">
-      <p>When you use the route planner, your choices are kept in this browser tab's session storage, on your device. They are your seat, your start point, your route options and the step you are on. This is so a refresh does not lose your place. Closing the tab ends the session and the browser forgets them. They are not sent to anyone.</p>
+      <p>When you use the route planner, your choices are kept in this browser tab's session storage, on your device. They are your destination (in the demo, a seat), your start point, your route options and the step you are on. This is so a refresh does not lose your place. Closing the tab ends the session and the browser forgets them. They are not sent to anyone.</p>
       <p>Your ticket and route details are never put in the page address, so they do not end up in history, bookmarks or shared links.</p></div>
   </div></section><section class="band band-orange" aria-labelledby="clear-title"><div class="band-bar" aria-hidden="true"></div>
   <div class="band-inner">
@@ -73,7 +73,19 @@
       <p><button type="button" class="button button-cta" data-clear-saved hidden>Clear my saved route choices</button></p>
       <noscript><p class="notice">With JavaScript turned off this website saves nothing, so there is nothing to clear.</p></noscript>
       <div class="live-message" role="status" aria-live="polite" data-clear-status></div></div>
-  </div></section><section class="band band-blue band-tall" aria-labelledby="apps-title"><div class="band-bar" aria-hidden="true"></div>
+  </div></section><section class="band band-blue band-tall" aria-labelledby="sharing-title"><div class="band-bar" aria-hidden="true"></div>
+  <div class="band-inner">
+    <div class="band-tab"><h2 class="band-label" id="sharing-title">Sharing photos and video</h2></div>
+    <div class="band-body">
+      <p>You can share photos and short videos of a place through a form. The form is on a separate website: Autism &amp; Me's Wix site. This website does not send anything to it. You open the form yourself, from the link on the <a href="/isee-demo/seat-finder/share/">Share page</a>.</p>
+      <ul>
+        <li>The form collects the files you add, the place name and county, and an email address only if you want a reply.</li>
+        <li>What you add is stored with Wix, for Autism &amp; Me.</li>
+        <li>Autism &amp; Me looks at everything before it is shown. Nothing appears on iSEE straight away.</li>
+        <li>You can ask for what you shared to be taken down at any time.</li>
+      </ul>
+      <p>To ask for something to be taken down, email <a href="mailto:contactautismandme@gmail.com">contactautismandme@gmail.com</a>. You do not need to share any personal details.</p></div>
+  </div></section><section class="band band-orange band-tall" aria-labelledby="apps-title"><div class="band-bar" aria-hidden="true"></div>
   <div class="band-inner">
     <div class="band-tab"><h2 class="band-label" id="apps-title">The planned phone apps</h2></div>
     <div class="band-body">
@@ -89,13 +101,15 @@
     <p class="footer-tagline">Change the environment, not the child.</p>
     <nav aria-label="Footer">
       <ul class="footer-links">
-        <li><a href="/isee-demo/seat-finder/privacy/">Privacy</a></li>
-        <li><a href="/isee-demo/seat-finder/accessibility/">Accessibility</a></li>
-        <li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li>
+        <li><a href="/isee-demo/seat-finder/places/">Places</a></li>
+        <li><a href="/isee-demo/seat-finder/share/">Share</a></li>
         <li><a href="/isee-demo/seat-finder/venues/">Venues</a></li>
+        <li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li>
+        <li><a href="/isee-demo/seat-finder/accessibility/">Accessibility</a></li>
+        <li><a href="/isee-demo/seat-finder/privacy/">Privacy</a></li>
       </ul>
     </nav>
-    <p class="status-line">iSEE is in development. There are no live venues. The only venue is a made-up demo. The phone-sensor guidance and the camera-assisted pilot are not available and have not been tested on phones or in venues.</p>
+    <p class="status-line">iSEE is in development. There are no live venues. The only venue with a route guide is a made-up demo. No photos or videos have been published yet. The phone-sensor guidance and the camera-assisted pilot are not available and have not been tested on phones or in venues.</p>
     <p class="small">iSEE is a service by Autism &amp; Me.</p>
     <p class="small">© 2026 Elaine Walsh, Autism &amp; Me. All rights reserved.</p>
   </div>

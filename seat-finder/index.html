@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>iSEE: find your way to your seat · Preview before you visit</title>
-<meta name="description" content="iSEE by Autism &amp; Me is a route planner from your phone to your seat that needs no beacons and no new markers. It uses the entrances, signs, lifts and seat numbers already in the building.">
+<title>iSEE: see a place before you visit · Preview before you visit</title>
+<meta name="description" content="iSEE by Autism &amp; Me helps you see a place before you visit. Look up a place in any county, see what it is like in photos and short videos that anyone can share, and find your way inside to where you are going: a reception desk, a clinic, a department, a room, a counter or a seat.">
 <meta name="robots" content="noindex">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'">
 <meta name="author" content="Elaine Walsh, Autism &amp; Me">
@@ -12,14 +12,14 @@
 <meta property="og:site_name" content="iSEE by Autism &amp; Me">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_IE">
-<meta property="og:title" content="iSEE: find your way to your seat · Preview before you visit">
-<meta property="og:description" content="iSEE by Autism &amp; Me is a route planner from your phone to your seat that needs no beacons and no new markers. It uses the entrances, signs, lifts and seat numbers already in the building.">
+<meta property="og:title" content="iSEE: see a place before you visit · Preview before you visit">
+<meta property="og:description" content="iSEE by Autism &amp; Me helps you see a place before you visit. Look up a place in any county, see what it is like in photos and short videos that anyone can share, and find your way inside to where you are going: a reception desk, a clinic, a department, a room, a counter or a seat.">
 <meta property="og:url" content="https://harrisfromparis.github.io/isee-demo/seat-finder/">
 <meta property="og:image" content="https://harrisfromparis.github.io/isee-demo/seat-finder/assets/img/og.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="iSEE, Preview before you visit. Find your way to your seat, with no beacons and no new markers.">
+<meta property="og:image:alt" content="iSEE, Preview before you visit. See a place before you visit: look it up, see what it is like, and find your way.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/isee-demo/seat-finder/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/tokens.css">
@@ -38,13 +38,13 @@
     <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" hidden>Menu</button>
     <nav class="site-nav" aria-label="Main">
       <ul id="site-menu">
-        <li><a href="/isee-demo/seat-finder/#how-it-works">How it works</a></li><li><a href="/isee-demo/seat-finder/demo/">Try the demo</a></li><li><a href="/isee-demo/seat-finder/venues/">Venues</a></li><li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li><li><a href="/isee-demo/seat-finder/accessibility/">Accessibility</a></li>
+        <li><a href="/isee-demo/seat-finder/#how-it-works">How it works</a></li><li><a href="/isee-demo/seat-finder/places/">Places</a></li><li><a href="/isee-demo/seat-finder/share/">Share</a></li><li><a href="/isee-demo/seat-finder/demo/">Try the route demo</a></li><li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li>
       </ul>
     </nav>
   </div>
 </header><main id="main" tabindex="-1">
 <div class="hero-band">
-  <img class="hero-img" src="/isee-demo/seat-finder/assets/img/hero.svg" width="1600" height="700" alt="Illustration of a calm theatre foyer, wide and low-lit. On the left are glass entrance doors under an ENTRANCE sign. Tall arched windows line the back wall. On the right a round clock hangs above two signs, one for the lift and one for the stairs, with a wide staircase below. A few simple figures stand in the foyer. Rows of seats run across the front, one seat picked out in orange, with a dotted line leading to it from the doors.">
+  <img class="hero-img" src="/isee-demo/seat-finder/assets/img/hero.svg" width="1600" height="700" alt="Illustration of a calm foyer in a made-up building, wide and low-lit. On the left are glass entrance doors under an ENTRANCE sign. Tall arched windows line the back wall. On the right a round clock hangs above two signs, one for the lift and one for the stairs, with a wide staircase below. A few simple figures stand in the foyer. Rows of seats run across the front, one seat picked out in orange, with a dotted line leading to it from the doors.">
   <div class="hero-overlay">
     <div class="plaque">
       <svg class="mark" viewBox="0 0 72 72" width="72" height="72" aria-hidden="true" focusable="false"><circle class="mark-dot" cx="14" cy="58" r="5"/><path class="mark-route" d="M14 52 C 14 36 30 40 36 30" fill="none" stroke-width="3.5" stroke-dasharray="1 8" stroke-linecap="round"/><rect class="mark-seat" x="30" y="10" width="30" height="24" rx="8"/><rect class="mark-seat" x="28" y="38" width="34" height="20" rx="7"/></svg>
@@ -58,42 +58,62 @@
   <div class="band-inner">
     <div class="band-tab"><p class="band-label">What’s iSEE?</p></div>
     <div class="band-body">
-  <h1 id="hero-title">Find your way to your seat</h1>
-  <p class="lead">iSEE is designed so everyone can find their seat in the way that suits them: reading, listening, step by step or as an overview, with or without stairs. There is no diagnosis to give, no account to make and nothing to explain.</p>
-  <p>iSEE is a route planner by Autism &amp; Me. Choose your seat, say where you are, and follow plain directions that use things already in the building: entrances, signs, lifts, row markers and seat numbers.</p>
+  <h1 id="hero-title">See a place before you visit</h1>
+  <p class="lead">iSEE helps you prepare for a visit in the way that suits you. Look up a place, see what it is like, and find your way around it. There is no diagnosis to give, no account to make and nothing to explain.</p>
+  <p>iSEE is by Autism &amp; Me. It has three parts, and each one works on its own.</p>
+  <ol class="parts-list">
+    <li><strong><a href="/isee-demo/seat-finder/places/">Places.</a></strong> Look up a place in any county in Ireland.</li>
+    <li><strong><a href="/isee-demo/seat-finder/share/">What it&rsquo;s like.</a></strong> Photos and short videos of a place that anyone can share: the way in, the doors, the counter or reception, where you wait, the toilets, the lift and stairs, the lighting and sound, the seating, parking and drop-off. They are shown only after Autism &amp; Me has checked them.</li>
+    <li><strong><a href="/isee-demo/seat-finder/demo/">Find your way.</a></strong> Step-by-step routes inside a place, to where you are going: a reception desk, a clinic, a department, a room, a counter or a seat.</li>
+  </ol>
   <div class="button-row">
-    <a class="button button-cta" href="/isee-demo/seat-finder/demo/">Try the demo</a>
+    <a class="button button-cta" href="/isee-demo/seat-finder/places/">Find a place</a>
     <a class="button button-secondary" href="/isee-demo/seat-finder/#how-it-works">How it works</a>
   </div>
-  <p class="small">There are no live venues yet. The demo uses a made-up theatre.</p>
-  <ul class="facts-list">
-    <li><svg class="tick" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false"><path d="M3.5 9.5 7.5 13.5 14.5 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>No beacons.</strong> Nothing is installed in the building.</span></li>
-    <li><svg class="tick" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false"><path d="M3.5 9.5 7.5 13.5 14.5 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>No new markers.</strong> Directions point to doors, signs, lifts, concourses, row markers and seat numbers that are already there.</span></li>
-    <li><svg class="tick" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false"><path d="M3.5 9.5 7.5 13.5 14.5 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Text at every step.</strong> Every step is written in plain words. A map is optional.</span></li>
-  </ul></div>
+  <p class="small">There are no live venues yet. No photos or videos have been published yet. The route demo is one example: a made-up theatre, finding a seat.</p></div>
   </div></section>
 
 <section class="band band-orange" aria-labelledby="walk-title"><div class="band-bar" aria-hidden="true"></div>
   <div class="band-inner">
     <div class="band-tab"><h2 class="band-label" id="walk-title">Walkthrough</h2></div>
     <div class="band-body">
+  <h3>Find your way to where you are going</h3>
   <div class="split">
     <figure class="video-frame">
       <div class="frame"><img class="frame-img" src="/isee-demo/seat-finder/assets/previews/step-1.png" width="780" height="1560" alt="Screenshot of the demo at phone width, cropped to a wide frame. It shows the four stages (Seat, Start, Options, Route), the heading &quot;Choose your seat&quot; and the first lines of its introduction."></div>
-      <figcaption>Walkthrough in words and pictures — a captioned video with a transcript will be added when one is recorded. This is a screenshot of the demo at phone width, cropped.</figcaption>
+      <figcaption>Walkthrough in words and pictures — a captioned video with a transcript will be added when one is recorded. This is a screenshot of the route demo at phone width, cropped.</figcaption>
     </figure>
     <div>
-      <p>A big building can be hard to read before you get there. iSEE lets you preview the way to your seat, from the front door to your row. You see what you will pass, what to look for, and where the stairs and lifts are.</p>
+      <p>A big building can be hard to read before you get there. The route part of iSEE lets you preview the way to where you are going, from the front door to a reception desk, a clinic, a department, a room, a counter or a seat. You see what you will pass, what to look for, and where the stairs and lifts are.</p>
       <p>You choose how to follow it: one step at a time, or as an overview. Read it, or have a step read aloud when you ask. You can go back, repeat a step, or say you are somewhere else.</p>
-      <p><a href="/isee-demo/seat-finder/demo/">Try these steps in the demo</a></p>
+      <p><a href="/isee-demo/seat-finder/demo/">Try these steps in the route demo</a></p>
     </div>
   </div></div>
   </div></section>
 
-<section class="band band-blue" id="how-it-works" aria-labelledby="how-title"><div class="band-bar" aria-hidden="true"></div>
+<section class="band band-blue band-tall" id="how-it-works" aria-labelledby="how-title"><div class="band-bar" aria-hidden="true"></div>
   <div class="band-inner">
     <div class="band-tab"><h2 class="band-label" id="how-title">How to use</h2></div>
     <div class="band-body">
+  <div class="cols-3 steps-cols">
+    <div class="step-col">
+      <h3 class="chip">1. Find a place</h3>
+      <div class="circle-wrap"><div class="circle circle-fill"><svg class="ill" viewBox="0 0 160 160" width="160" height="160" aria-hidden="true" focusable="false"><rect width="160" height="160" class="ill-cream"/><rect x="22" y="30" width="116" height="28" rx="8" class="ill-white ill-line"/><circle cx="40" cy="44" r="6" class="ill-orange ill-line"/><rect x="54" y="38" width="70" height="5" rx="2.5" class="ill-navy"/><rect x="54" y="47" width="44" height="4" rx="2" class="ill-blue"/><rect x="22" y="66" width="116" height="28" rx="8" class="ill-white ill-line"/><circle cx="40" cy="80" r="6" class="ill-blue ill-line"/><rect x="54" y="74" width="56" height="5" rx="2.5" class="ill-navy"/><rect x="54" y="83" width="38" height="4" rx="2" class="ill-blue"/><rect x="22" y="102" width="116" height="28" rx="8" class="ill-white ill-line"/><circle cx="40" cy="116" r="6" class="ill-blue ill-line"/><rect x="54" y="110" width="42" height="5" rx="2.5" class="ill-navy"/><rect x="54" y="119" width="32" height="4" rx="2" class="ill-blue"/></svg></div></div>
+      <p class="caption">Look up a place by county and category. Every place is listed as having no iSEE guide yet. <a href="/isee-demo/seat-finder/places/">Browse places</a>.</p>
+    </div>
+    <div class="step-col">
+      <h3 class="chip">2. See what it’s like</h3>
+      <div class="circle-wrap"><div class="circle circle-fill"><svg class="ill" viewBox="0 0 160 160" width="160" height="160" aria-hidden="true" focusable="false"><rect width="160" height="160" class="ill-cream"/><rect x="30" y="40" width="100" height="78" rx="10" class="ill-white ill-line" transform="rotate(-6 80 80)"/><rect x="34" y="34" width="100" height="78" rx="10" class="ill-white ill-line"/><rect x="42" y="42" width="84" height="62" rx="5" class="ill-blue"/><rect x="68" y="58" width="32" height="46" class="ill-cream ill-line"/><circle cx="94" cy="82" r="2.5" class="ill-navy"/><circle cx="112" cy="54" r="7" class="ill-orange ill-line"/><circle cx="118" cy="112" r="17" class="ill-navy"/><path d="M113 103 126 112 113 121Z" class="ill-cream"/></svg></div></div>
+      <p class="caption">Photos and short videos of the way in, the doors, where you wait, the toilets and more, shown after Autism &amp; Me has checked them. No photos or videos have been published yet. <a href="/isee-demo/seat-finder/share/">Share what a place is like</a>.</p>
+    </div>
+    <div class="step-col">
+      <h3 class="chip">3. Find your way</h3>
+      <div class="circle-wrap"><div class="circle circle-fill"><svg class="ill" viewBox="0 0 160 160" width="160" height="160" aria-hidden="true" focusable="false"><rect width="160" height="160" class="ill-cream"/><circle cx="34" cy="118" r="7" class="ill-navy"/><path d="M36 108 C 36 80 62 90 78 66 S 104 52 106 48" fill="none" class="ill-route"/><rect x="98" y="26" width="38" height="30" rx="9" class="ill-orange ill-line"/><rect x="94" y="62" width="46" height="26" rx="8" class="ill-orange ill-line"/></svg></div></div>
+      <p class="caption">Step-by-step routes inside a place, to a reception desk, a clinic, a department, a room, a counter or a seat. The route demo is one example: a made-up theatre, finding a seat. Other kinds of places and destinations will follow. <a href="/isee-demo/seat-finder/demo/">Try the route demo</a>.</p>
+    </div>
+  </div>
+  <p class="small">The three pictures above are drawings, not photographs or screenshots.</p>
+  <h3 class="steps-sub">Find your way, in three steps</h3>
   <div class="cols-3 steps-cols">
     <div class="step-col">
       <h3 class="chip">1. Choose your seat</h3>
@@ -109,8 +129,8 @@
       <p class="caption">One step at a time, in plain words, with the sign or landmark to look for. You confirm each checkpoint.</p>
     </div>
   </div>
-  <p class="small">Screenshots of the demo at phone width, cropped to a circle.</p>
-  <p><a href="/isee-demo/seat-finder/demo/">Try these three steps in the demo</a></p></div>
+  <p class="small">Screenshots of the route demo at phone width, cropped to a circle.</p>
+  <p><a href="/isee-demo/seat-finder/demo/">Try these three steps in the route demo</a></p></div>
   </div></section>
 
 <section class="band band-orange" id="venue-status" aria-labelledby="venues-title"><div class="band-bar" aria-hidden="true"></div>
@@ -133,8 +153,9 @@
     <div class="band-body">
   <div class="split split-system">
     <div>
-      <p>iSEE works with the building as it is. The venue describes its checkpoints and the paths between them. Your phone works out the route. You confirm each checkpoint as you reach it.</p>
-      <h3>4 steps to set up a venue</h3>
+      <p>All three parts of iSEE use what is already there. Places come from open data. What it&rsquo;s like comes from photos and short videos that people share, and Autism &amp; Me checks each one before it is shown. Find your way uses the building as it is.</p>
+      <p>For routes, the venue describes its checkpoints and the paths between them. Your phone works out the route. You confirm each checkpoint as you reach it.</p>
+      <h3>4 steps to set up a venue&rsquo;s routes</h3>
       <ol class="ruled">
         <li>Share approved floor and seating plans.</li>
         <li>Map existing landmarks, entrances, lifts and rows.</li>
@@ -148,10 +169,10 @@
       <figcaption>Diagram of how iSEE works out a route. The text below says the same thing.</figcaption>
     </figure>
   </div>
-  <h3>The same diagram in words</h3>
+  <h3>Find your way: the diagram in words</h3>
   <ol>
     <li><strong>Venue map data.</strong> The venue is described as checkpoints and the paths between them. Each checkpoint names a sign, lift, door or row marker that is already in the building.</li>
-    <li><strong>Phone.</strong> iSEE finds the shortest path that is allowed, from where you are to your seat, and shows it as one written step at a time. Sensors would be used only in future phone apps.</li>
+    <li><strong>Phone.</strong> iSEE finds the shortest path that is allowed, from where you are to where you are going, and shows it as one written step at a time. Sensors would be used only in future phone apps.</li>
     <li><strong>You.</strong> You confirm each checkpoint as you reach it. You choose the start point and whether the route must be step-free. Confirming works both ways: the phone shows the next step, and you tell it where you are.</li>
   </ol>
   <h3>A short engineering explanation</h3>
@@ -175,13 +196,15 @@
     <p class="footer-tagline">Change the environment, not the child.</p>
     <nav aria-label="Footer">
       <ul class="footer-links">
-        <li><a href="/isee-demo/seat-finder/privacy/">Privacy</a></li>
-        <li><a href="/isee-demo/seat-finder/accessibility/">Accessibility</a></li>
-        <li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li>
+        <li><a href="/isee-demo/seat-finder/places/">Places</a></li>
+        <li><a href="/isee-demo/seat-finder/share/">Share</a></li>
         <li><a href="/isee-demo/seat-finder/venues/">Venues</a></li>
+        <li><a href="/isee-demo/seat-finder/for-venues/">For venues</a></li>
+        <li><a href="/isee-demo/seat-finder/accessibility/">Accessibility</a></li>
+        <li><a href="/isee-demo/seat-finder/privacy/">Privacy</a></li>
       </ul>
     </nav>
-    <p class="status-line">iSEE is in development. There are no live venues. The only venue is a made-up demo. The phone-sensor guidance and the camera-assisted pilot are not available and have not been tested on phones or in venues.</p>
+    <p class="status-line">iSEE is in development. There are no live venues. The only venue with a route guide is a made-up demo. No photos or videos have been published yet. The phone-sensor guidance and the camera-assisted pilot are not available and have not been tested on phones or in venues.</p>
     <p class="small">iSEE is a service by Autism &amp; Me.</p>
     <p class="small">© 2026 Elaine Walsh, Autism &amp; Me. All rights reserved.</p>
   </div>
