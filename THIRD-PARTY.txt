@@ -137,3 +137,14 @@ open-source licences (MIT, ISC, BSD, BlueOak, Apache-2.0 or similar).
 │ zod                                   │ MIT           │
 │ @fontsource/atkinson-hyperlegible     │ OFL-1.1       │
 │ @fontsource/poppins                   │ OFL-1.1       │
+
+Places directory (tools/directory, seat-finder/data)
+- OpenStreetMap data — (c) OpenStreetMap contributors — Open Database Licence (ODbL) 1.0 —
+  https://www.openstreetmap.org/copyright . Extracts are downloaded from Geofabrik
+  (https://download.geofabrik.de/) at build time; the files in seat-finder/data are a derived database
+  and remain under the ODbL.
+- pyosmium (Python package "osmium" 4.3.2) — BSD-2-Clause. Its wheels bundle libosmium and protozero
+  (Boost Software License 1.0 and BSD-2-Clause respectively; see the notices inside the installed wheel).
+- Shapely 2.2.0 — BSD-3-Clause. Its wheels bundle GEOS (LGPL-2.1).
+- NumPy 2.5.3 (dependency of Shapely) — BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0, as declared in the installed package metadata.
+These are build-time tools only; none is shipped to visitors' browsers.

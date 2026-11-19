@@ -1,0 +1,74 @@
+name: Build places directory
+
+# Rebuilds seat-finder/data from the Geofabrik OpenStreetMap extract of Ireland.
+# Data: (c) OpenStreetMap contributors, Open Database Licence (ODbL).
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * 1"   # Mondays 03:17 UTC
+  push:
+    branches: [main]
+    paths:
+      - "tools/directory/**"
+      - ".github/workflows/build-directory.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-directory
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r tools/directory/requirements.txt
+
+      - name: Download Ireland extract from Geofabrik
+        run: |
+          curl --fail --location --retry 5 --retry-delay 15 --retry-all-errors \
+            --output "$RUNNER_TEMP/ireland.osm.pbf" \
+            "https://download.geofabrik.de/europe/ireland-and-northern-ireland-latest.osm.pbf"
+          ls -l "$RUNNER_TEMP/ireland.osm.pbf"
+
+      - name: Build directory
+        run: |
+          python tools/directory/build_directory.py \
+            --pbf "$RUNNER_TEMP/ireland.osm.pbf" \
+            --out seat-finder/data \
+            --extract-label "ireland-and-northern-ireland-latest.osm.pbf (Geofabrik, downloaded $(date -u +%F))"
+
+      - name: Show summary
+        if: always()
+        run: |
+          if [ -f seat-finder/data/summary.txt ]; then
+            cat seat-finder/data/summary.txt
+            {
+              echo '## Places directory run summary'
+              echo '```'
+              cat seat-finder/data/summary.txt
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit and push data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A seat-finder/data
+          if git diff --cached --quiet; then
+            echo "No changes to seat-finder/data; nothing to commit."
+            exit 0
+          fi
+          git commit -m "Update Ireland places directory from OpenStreetMap"
+          git pull --rebase origin "${GITHUB_REF_NAME}" || true
+          git push origin "HEAD:${GITHUB_REF_NAME}"
