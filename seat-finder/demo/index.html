@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Try the route demo: Harbour Theatre · iSEE</title>
-<meta name="description" content="Try the iSEE route part, Find your way, in Harbour Theatre, a made-up venue. It is one example: finding a seat. Choose where you are going, choose where you are, and follow written directions one step at a time.">
+<title>Try the route demo · iSEE</title>
+<meta name="description" content="Try the iSEE route part, Find your way, in two made-up places: a theatre (finding a seat) and a health centre (finding reception, a clinic room or a department). Other kinds of places and destinations will follow.">
 <meta name="robots" content="noindex">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'">
 <meta name="author" content="Elaine Walsh, Autism &amp; Me">
@@ -12,8 +12,8 @@
 <meta property="og:site_name" content="iSEE by Autism &amp; Me">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_IE">
-<meta property="og:title" content="Try the route demo: Harbour Theatre · iSEE">
-<meta property="og:description" content="Try the iSEE route part, Find your way, in Harbour Theatre, a made-up venue. It is one example: finding a seat. Choose where you are going, choose where you are, and follow written directions one step at a time.">
+<meta property="og:title" content="Try the route demo · iSEE">
+<meta property="og:description" content="Try the iSEE route part, Find your way, in two made-up places: a theatre (finding a seat) and a health centre (finding reception, a clinic room or a department). Other kinds of places and destinations will follow.">
 <meta property="og:url" content="https://harrisfromparis.github.io/isee-demo/seat-finder/demo/">
 <meta property="og:image" content="https://harrisfromparis.github.io/isee-demo/seat-finder/assets/img/og.png">
 <meta property="og:image:type" content="image/png">
@@ -26,7 +26,7 @@
 <link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/site-tokens.css">
 <link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/fonts.css">
 <link rel="stylesheet" href="/isee-demo/seat-finder/assets/css/site.css">
-<script type="module" src="/isee-demo/seat-finder/assets/js/nav.js"></script><script type="module" src="/isee-demo/seat-finder/assets/js/planner.js"></script>
+<script type="module" src="/isee-demo/seat-finder/assets/js/nav.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a><header class="site-header">
@@ -46,55 +46,40 @@
   <div class="band-inner">
     <div class="band-tab"><p class="band-label">Demo</p></div>
     <div class="band-body">
-    <h1>Try the route demo: Harbour Theatre</h1>
-    <p class="lead">This is the <strong>Find your way</strong> part of iSEE. This demo is one example: a made-up theatre, finding a seat. Other kinds of places and destinations will follow. Plan a route to a seat. Choose how to follow it: one step at a time or as an overview, with or without stairs. Nothing here is a real place.</p>
-    <div class="notice notice-demo" role="note"><p class="notice-title"><svg class="icon" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="9" cy="9" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 8v5.2M9 4.8v.4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><strong>This venue is made up</strong></p><p>Harbour Theatre is a fictional venue. Its signs, routes, seats and shows are invented for the demo. They say nothing about any real building.</p></div>
-    <section class="planner-section" aria-labelledby="planner-title">
-  <h2 id="planner-title" class="section-title">Plan a route</h2>
-  <div id="planner-root" data-venue-id="harbour-theatre-demo" data-base="/isee-demo/seat-finder/" data-sensors="true"></div>
-  <noscript><p class="notice">The route planner needs JavaScript. Without it, you can read the sample route in words below, and the <a href="/isee-demo/seat-finder/venues/harbour-theatre-demo/">venue guide</a> lists the entrances, signs and seat numbering in plain text.</p></noscript>
-</section>
-    <section class="sensors" aria-labelledby="sensors-title">
-  <h2 id="sensors-title">Simulated phone sensors — demonstration only</h2>
-  <div id="sensors-root"></div>
-  <noscript><p class="notice">The simulated sensors panel needs JavaScript. Nothing on this website uses your phone's sensors.</p></noscript>
-</section></div>
+    <h1>Try the route demo</h1>
+    <p class="lead">This is the <strong>Find your way</strong> part of iSEE. It gives written, step-by-step directions inside a building, to where you are going: a reception desk, a clinic, a department, a room, a counter, a toilet, a lift or a seat. Here are two examples so far. Both are made-up places. Other kinds of places and destinations will follow.</p>
+    <div class="notice notice-demo" role="note"><p class="notice-title"><svg class="icon" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="9" cy="9" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 8v5.2M9 4.8v.4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><strong>Both places are made up</strong></p><p>Nothing here is a real building. The signs, routes and places are invented for the demos. They say nothing about any real building.</p></div>
+    <ul class="plain-list venue-list" data-testid="demo-list"><li class="card venue-card">
+      <h2 class="card-title"><a href="/isee-demo/seat-finder/demo/harbour-theatre/">Harbour Theatre</a></h2>
+      <p><span class="status status-demo"><svg class="icon" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="9" cy="9" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 8v5.2M9 4.8v.4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span>Fictional demo place</span></span></p>
+      <p>One example: finding a seat in a made-up theatre.</p>
+      <p><a class="button button-cta" href="/isee-demo/seat-finder/demo/harbour-theatre/">Try the Harbour Theatre demo</a></p>
+      <p class="small">Or read the <a href="/isee-demo/seat-finder/venues/harbour-theatre-demo/">venue guide</a>.</p>
+    </li><li class="card venue-card">
+      <h2 class="card-title"><a href="/isee-demo/seat-finder/demo/riverside-health-centre/">Riverside Health Centre</a></h2>
+      <p><span class="status status-demo"><svg class="icon" viewBox="0 0 18 18" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="9" cy="9" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 8v5.2M9 4.8v.4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span>Fictional demo place</span></span></p>
+      <p>One example: finding reception, a clinic room or a department in a made-up health centre.</p>
+      <p><a class="button button-secondary" href="/isee-demo/seat-finder/demo/riverside-health-centre/">Try the Riverside Health Centre demo</a></p>
+      <p class="small">Or read the <a href="/isee-demo/seat-finder/venues/riverside-health-centre-demo/">venue guide</a>.</p>
+    </li></ul></div>
   </div></section>
-<section class="band band-orange" aria-labelledby="how-demo-title"><div class="band-bar" aria-hidden="true"></div>
+<section class="band band-orange" aria-labelledby="what-demos-title"><div class="band-bar" aria-hidden="true"></div>
   <div class="band-inner">
-    <div class="band-tab"><h2 class="band-label" id="how-demo-title">How the demo works</h2></div>
+    <div class="band-tab"><h2 class="band-label" id="what-demos-title">What a demo does</h2></div>
     <div class="band-body">
     <ol>
-      <li><strong>Choose a seat.</strong> Pick a section, row and seat in the made-up theatre.</li>
+      <li><strong>Choose where you are going.</strong> A seat, or a place such as a reception desk, a clinic room or a department.</li>
       <li><strong>Choose where you are.</strong> Pick an entrance or another start point. Each one names the sign to look for.</li>
-      <li><strong>Follow the route.</strong> Read one step at a time. Confirm each checkpoint when you reach it. You can go back a step.</li>
+      <li><strong>Follow the route.</strong> Read one step at a time. Confirm each checkpoint when you reach it.</li>
       <li><strong>Choose stairs or no stairs.</strong> Step-free routes never use stairs. They also avoid paths that have not been checked.</li>
     </ol>
-    <p>The made-up venue has one passage that is closed and one ramp whose step-free status is unknown, so you can see how both are handled. The <a href="/isee-demo/seat-finder/venues/harbour-theatre-demo/">venue guide</a> lists them.</p>
-    <h3>What the demo does not do</h3>
+    <h3>What the demos do not do</h3>
     <ul>
-      <li>It does not use your phone's sensors. You confirm each checkpoint yourself.</li>
-      <li>It does not connect to any real venue.</li>
-      <li>It has not been tested in a real building, or by people using screen readers. See <a href="/isee-demo/seat-finder/accessibility/">Designed for everyone</a>.</li>
+      <li>They do not use your phone's sensors. You confirm each checkpoint yourself.</li>
+      <li>They do not connect to any real venue.</li>
+      <li>They have not been tested in a real building, or by people using screen readers. See <a href="/isee-demo/seat-finder/accessibility/">Designed for everyone</a>.</li>
     </ul>
     <p>Your choices stay in this browser so a refresh does not lose your place. <a href="/isee-demo/seat-finder/privacy/">Privacy</a> explains this and how to clear them.</p></div>
-  </div></section>
-<section class="band band-blue band-tall" aria-labelledby="sample-route-title"><div class="band-bar" aria-hidden="true"></div>
-  <div class="band-inner">
-    <div class="band-tab"><h2 class="band-label" id="sample-route-title">The sample route in words</h2></div>
-    <div class="band-body"><div data-testid="sample-route">
-    <p>This is the route the planner gives for the made-up sample ticket (Section B, Row C, Seat 12), starting from Main entrance, Quay Street. It is the same text, made when this page was built. You can read it without JavaScript.</p>
-    <h3>Standard route</h3>
-    <h4>Overview</h4>
-    <ol><li>Going to Section B, Upper level, Row C, Seat 12.</li><li>Start at Main entrance, Quay Street.</li><li>Take the stairs to the upper level.</li><li>Go through Door B West, Section B.</li><li>Find Row C.</li><li>Find Seat 12.</li></ol>
-    <h4>Every step</h4>
-    <ol><li>Go through the main doors. They open by themselves. Walk straight ahead into the lower lobby, until you are under the large round clock. <span class="small block">Look or listen for: Large round clock. On the wall facing the main doors, above head height. It ticks loudly.</span> <span class="small block">Next checkpoint: Lower lobby, under the clock. The open lobby with a large round clock on the wall. The clock ticks loudly.</span></li><li>Facing the clock, turn left. Walk to the wide staircase with the sign STAIRS TO UPPER LEVEL. <span class="small block">Look or listen for: Sign: STAIRS TO UPPER LEVEL. Hanging sign in large white letters, to the left of the clock.</span> <span class="small block">Next checkpoint: Foot of the main stairs. Wide staircase with a handrail on both sides. The sign says STAIRS TO UPPER LEVEL.</span></li><li>Go up the main stairs to the upper level. There are 24 steps with one landing halfway. Handrails are on both sides. <span class="small block">Look or listen for: Sign: STAIRS TO UPPER LEVEL. Hanging sign in large white letters, to the left of the clock.</span> <span class="small block">Next checkpoint: Top of the main stairs. Landing at the top of the main stairs. The sign says UPPER LEVEL.</span></li><li>From the top of the stairs, walk straight ahead onto the carpeted concourse. Stop at the programme stand. <span class="small block">Look or listen for: Programme stand. Waist-high wooden stand at the west end of the concourse.</span> <span class="small block">Next checkpoint: Upper concourse, west end. Carpeted concourse. A programme stand is here. Signs point to DOOR A and DOOR B WEST.</span></li><li>From the programme stand, go to the nearest doors. They say B WEST. Go through Door B West. <span class="small block">Next checkpoint: Door B West, Section B. Double doors with the words B WEST.</span></li><li>Walk down the stepped aisle. There is one step at each row. Row E is the first row you reach, on your right. Each row has its letter on the end seat. <span class="small block">Next checkpoint: Section B, Row E, west aisle end. Row letter on the end of the row, raised and in large print.</span></li><li>Keep going down the stepped aisle. There is one step at each row to the next row. This is Row D, the 2nd row from the doors, on your right. <span class="small block">Next checkpoint: Section B, Row D, west aisle end. Row letter on the end of the row, raised and in large print.</span></li><li>Keep going down the stepped aisle. There is one step at each row to the next row. This is Row C, the 3rd row from the doors, on your right. <span class="small block">Next checkpoint: Section B, Row C, west aisle end. Row letter on the end of the row, raised and in large print.</span></li><li>Turn right into Row C. Seat numbers go down as you walk along the row, starting at 14. Seat 12 is the 3rd seat. The number is on the seat back.</li></ol>
-    <h3>Step-free route</h3>
-    <h4>Overview</h4>
-    <ol><li>Going to Section B, Upper level, Row C, Seat 12.</li><li>Start at Main entrance, Quay Street.</li><li>Take the lift to the upper level.</li><li>Go through Door B East, Section B.</li><li>Find Row C.</li><li>Find Seat 12.</li></ol>
-    <h4>Every step</h4>
-    <ol><li>Go through the main doors. They open by themselves. Walk straight ahead into the lower lobby, until you are under the large round clock. <span class="small block">Look or listen for: Large round clock. On the wall facing the main doors, above head height. It ticks loudly.</span> <span class="small block">Next checkpoint: Lower lobby, under the clock. The open lobby with a large round clock on the wall. The clock ticks loudly.</span></li><li>Facing the clock, turn right. Walk along the corridor until you reach the hanging sign for LIFT and EAST STAIRS. <span class="small block">Look or listen for: Sign: LIFT. Hanging sign with the word LIFT and a lift symbol. Also in braille on the wall plate beside the call button.</span> <span class="small block">Next checkpoint: East corridor. Corridor junction. A hanging sign points to LIFT and EAST STAIRS.</span></li><li>At the hanging sign, turn towards LIFT. The lift is at the end of the short passage. <span class="small block">Look or listen for: Sign: LIFT. Hanging sign with the word LIFT and a lift symbol. Also in braille on the wall plate beside the call button.</span> <span class="small block">Next checkpoint: Lift, ground floor. One lift with a call button at 1 metre height. The sign says LIFT TO UPPER LEVEL. The lift announces each floor.</span></li><li>Take the lift to the upper level. Press the button marked 1. The lift says &quot;Upper level&quot; when it arrives. <span class="small block">Look or listen for: Sign: LIFT. Hanging sign with the word LIFT and a lift symbol. Also in braille on the wall plate beside the call button.</span> <span class="small block">Next checkpoint: Lift, upper level. Lift doors on the upper level. The sign says LIFT TO GROUND FLOOR.</span></li><li>Leave the lift and walk straight ahead onto the carpeted concourse. Stop at the water fountain. You may hear it humming. <span class="small block">Look or listen for: Water fountain. Wall-mounted fountain at the east end of the concourse. It makes a steady hum.</span> <span class="small block">Next checkpoint: Upper concourse, east end. Carpeted concourse. A water fountain is here and it hums. A sign points to DOOR B EAST.</span></li><li>From the water fountain, go to the nearest doors. They say B EAST. Go through Door B East. The floor is level. <span class="small block">Next checkpoint: Door B East, Section B. Double doors with the words B EAST. The floor is level through the doors.</span></li><li>Walk down the sloping aisle. There are no steps. Row E is the first row you reach, on your left. Each row has its letter on the end seat. <span class="small block">Next checkpoint: Section B, Row E, east aisle end. Row letter on the end of the row, raised and in large print.</span></li><li>Keep going down the sloping aisle. There are no steps to the next row. This is Row D, the 2nd row from the doors, on your left. <span class="small block">Next checkpoint: Section B, Row D, east aisle end. Row letter on the end of the row, raised and in large print.</span></li><li>Keep going down the sloping aisle. There are no steps to the next row. This is Row C, the 3rd row from the doors, on your left. <span class="small block">Next checkpoint: Section B, Row C, east aisle end. Row letter on the end of the row, raised and in large print.</span></li><li>Turn left into Row C. Seat numbers go up as you walk along the row, starting at 1. Seat 12 is the 12th seat. The number is on the seat back.</li></ol>
-  </div></div>
   </div></section></main><footer class="site-footer">
   <div class="wrap">
     <p class="footer-tagline">Change the environment, not the child.</p>
@@ -108,7 +93,7 @@
         <li><a href="/isee-demo/seat-finder/privacy/">Privacy</a></li>
       </ul>
     </nav>
-    <p class="status-line">iSEE is in development. There are no live venues. The only venue with a route guide is a made-up demo. No photos or videos have been published yet. The phone-sensor guidance and the camera-assisted pilot are not available and have not been tested on phones or in venues.</p>
+    <p class="status-line">iSEE is in development. There are no live venues. The only places with a route guide are two made-up demos. No photos or videos have been published yet. The phone-sensor guidance and the camera-assisted pilot are not available and have not been tested on phones or in venues.</p>
     <p class="small">iSEE is a service by Autism &amp; Me.</p>
     <p class="small">© 2026 Elaine Walsh, Autism &amp; Me. All rights reserved.</p>
   </div>
