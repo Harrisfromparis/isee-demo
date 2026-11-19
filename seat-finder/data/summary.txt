@@ -1,0 +1,300 @@
+iSEE places directory - run summary
+Source: © OpenStreetMap contributors, Open Database Licence (ODbL)
+Generated: 2026-11-19T15:23:45Z
+Extract: ireland-and-northern-ireland-latest.osm.pbf (Geofabrik, downloaded 2026-11-19)
+
+Places written: 70507
+  with an Eircode in the open data: 8626
+Candidate named places read: 86838
+  placed by addr:county fallback (no boundary polygon contained them): 0
+  dropped - Northern Ireland (out of scope): 16302
+  dropped - could not be assigned to a county: 18
+  dropped - exact duplicates: 11
+  points inside polygons of more than one county (first slug used): 0
+Areas with unusable geometry (skipped): 0
+
+Counts per county and category
+  Carlow: 637 (Health and therapy 31, Schools and education 36, Places of worship 49, Libraries 3, Theatres, cinemas and arts 8, Cafés 26, Restaurants, pubs and takeaways 112, Public services 60, Hotels and places to stay 12, Sport and leisure 55, Shops 209, Offices and business services 23, Trades and industry 13)
+  Cavan: 1851 (Health and therapy 99, Schools and education 100, Places of worship 133, Libraries 8, Theatres, cinemas and arts 9, Cafés 43, Restaurants, pubs and takeaways 265, Public services 166, Hotels and places to stay 50, Sport and leisure 102, Shops 664, Offices and business services 141, Trades and industry 71)
+  Clare: 2296 (Health and therapy 94, Schools and education 98, Places of worship 103, Libraries 15, Theatres, cinemas and arts 23, Cafés 92, Restaurants, pubs and takeaways 329, Public services 136, Hotels and places to stay 178, Sport and leisure 119, Shops 775, Offices and business services 279, Trades and industry 55)
+  Cork: 8530 (Health and therapy 465, Schools and education 509, Places of worship 304, Libraries 31, Theatres, cinemas and arts 75, Cafés 357, Restaurants, pubs and takeaways 1365, Public services 581, Hotels and places to stay 359, Sport and leisure 557, Shops 2957, Offices and business services 744, Trades and industry 226)
+  Donegal: 1841 (Health and therapy 82, Schools and education 79, Places of worship 117, Libraries 11, Theatres, cinemas and arts 25, Cafés 87, Restaurants, pubs and takeaways 393, Public services 167, Hotels and places to stay 150, Sport and leisure 98, Shops 537, Offices and business services 55, Trades and industry 40)
+  Dublin: 17876 (Health and therapy 1140, Schools and education 974, Places of worship 368, Libraries 79, Theatres, cinemas and arts 157, Cafés 1087, Restaurants, pubs and takeaways 2794, Public services 1005, Hotels and places to stay 397, Sport and leisure 916, Shops 6136, Offices and business services 2505, Trades and industry 318)
+  Galway: 4297 (Health and therapy 218, Schools and education 303, Places of worship 181, Libraries 22, Theatres, cinemas and arts 49, Cafés 187, Restaurants, pubs and takeaways 646, Public services 285, Hotels and places to stay 306, Sport and leisure 260, Shops 1391, Offices and business services 346, Trades and industry 103)
+  Kerry: 3025 (Health and therapy 132, Schools and education 111, Places of worship 106, Libraries 10, Theatres, cinemas and arts 32, Cafés 136, Restaurants, pubs and takeaways 542, Public services 183, Hotels and places to stay 409, Sport and leisure 199, Shops 960, Offices and business services 152, Trades and industry 53)
+  Kildare: 2682 (Health and therapy 145, Schools and education 185, Places of worship 100, Libraries 17, Theatres, cinemas and arts 19, Cafés 114, Restaurants, pubs and takeaways 390, Public services 169, Hotels and places to stay 57, Sport and leisure 229, Shops 1016, Offices and business services 200, Trades and industry 41)
+  Kilkenny: 2090 (Health and therapy 127, Schools and education 143, Places of worship 112, Libraries 12, Theatres, cinemas and arts 22, Cafés 81, Restaurants, pubs and takeaways 270, Public services 156, Hotels and places to stay 80, Sport and leisure 110, Shops 703, Offices and business services 206, Trades and industry 68)
+  Laois: 1160 (Health and therapy 58, Schools and education 76, Places of worship 100, Libraries 10, Theatres, cinemas and arts 10, Cafés 25, Restaurants, pubs and takeaways 213, Public services 83, Hotels and places to stay 26, Sport and leisure 101, Shops 386, Offices and business services 52, Trades and industry 20)
+  Leitrim: 553 (Health and therapy 21, Schools and education 30, Places of worship 59, Libraries 5, Theatres, cinemas and arts 11, Cafés 16, Restaurants, pubs and takeaways 102, Public services 63, Hotels and places to stay 24, Sport and leisure 26, Shops 174, Offices and business services 15, Trades and industry 7)
+  Limerick: 3288 (Health and therapy 171, Schools and education 149, Places of worship 101, Libraries 8, Theatres, cinemas and arts 23, Cafés 108, Restaurants, pubs and takeaways 492, Public services 221, Hotels and places to stay 67, Sport and leisure 144, Shops 1246, Offices and business services 483, Trades and industry 75)
+  Longford: 412 (Health and therapy 14, Schools and education 43, Places of worship 52, Libraries 7, Theatres, cinemas and arts 3, Cafés 9, Restaurants, pubs and takeaways 61, Public services 46, Hotels and places to stay 7, Sport and leisure 33, Shops 118, Offices and business services 8, Trades and industry 11)
+  Louth: 1096 (Health and therapy 46, Schools and education 66, Places of worship 55, Libraries 3, Theatres, cinemas and arts 11, Cafés 43, Restaurants, pubs and takeaways 213, Public services 68, Hotels and places to stay 45, Sport and leisure 77, Shops 407, Offices and business services 35, Trades and industry 27)
+  Mayo: 1936 (Health and therapy 80, Schools and education 129, Places of worship 119, Libraries 10, Theatres, cinemas and arts 24, Cafés 72, Restaurants, pubs and takeaways 349, Public services 160, Hotels and places to stay 131, Sport and leisure 125, Shops 627, Offices and business services 76, Trades and industry 34)
+  Meath: 2305 (Health and therapy 108, Schools and education 152, Places of worship 111, Libraries 9, Theatres, cinemas and arts 11, Cafés 73, Restaurants, pubs and takeaways 345, Public services 136, Hotels and places to stay 58, Sport and leisure 182, Shops 867, Offices and business services 200, Trades and industry 53)
+  Monaghan: 855 (Health and therapy 28, Schools and education 61, Places of worship 80, Libraries 5, Theatres, cinemas and arts 6, Cafés 29, Restaurants, pubs and takeaways 117, Public services 53, Hotels and places to stay 18, Sport and leisure 78, Shops 289, Offices and business services 59, Trades and industry 32)
+  Offaly: 972 (Health and therapy 54, Schools and education 71, Places of worship 87, Libraries 6, Theatres, cinemas and arts 7, Cafés 27, Restaurants, pubs and takeaways 157, Public services 76, Hotels and places to stay 23, Sport and leisure 84, Shops 320, Offices and business services 41, Trades and industry 19)
+  Roscommon: 658 (Health and therapy 31, Schools and education 52, Places of worship 77, Libraries 3, Theatres, cinemas and arts 9, Cafés 15, Restaurants, pubs and takeaways 105, Public services 68, Hotels and places to stay 21, Sport and leisure 50, Shops 193, Offices and business services 22, Trades and industry 12)
+  Sligo: 987 (Health and therapy 48, Schools and education 68, Places of worship 83, Libraries 2, Theatres, cinemas and arts 12, Cafés 37, Restaurants, pubs and takeaways 171, Public services 85, Hotels and places to stay 69, Sport and leisure 59, Shops 304, Offices and business services 27, Trades and industry 22)
+  Tipperary: 2974 (Health and therapy 146, Schools and education 185, Places of worship 187, Libraries 8, Theatres, cinemas and arts 33, Cafés 90, Restaurants, pubs and takeaways 446, Public services 231, Hotels and places to stay 75, Sport and leisure 200, Shops 1107, Offices and business services 196, Trades and industry 70)
+  Waterford: 2047 (Health and therapy 96, Schools and education 125, Places of worship 103, Libraries 13, Theatres, cinemas and arts 24, Cafés 100, Restaurants, pubs and takeaways 331, Public services 156, Hotels and places to stay 53, Sport and leisure 177, Shops 683, Offices and business services 129, Trades and industry 57)
+  Westmeath: 1385 (Health and therapy 76, Schools and education 73, Places of worship 59, Libraries 4, Theatres, cinemas and arts 20, Cafés 65, Restaurants, pubs and takeaways 250, Public services 78, Hotels and places to stay 39, Sport and leisure 61, Shops 523, Offices and business services 97, Trades and industry 40)
+  Wexford: 2874 (Health and therapy 150, Schools and education 123, Places of worship 166, Libraries 4, Theatres, cinemas and arts 29, Cafés 106, Restaurants, pubs and takeaways 426, Public services 181, Hotels and places to stay 98, Sport and leisure 142, Shops 1140, Offices and business services 236, Trades and industry 73)
+  Wicklow: 1880 (Health and therapy 98, Schools and education 124, Places of worship 101, Libraries 7, Theatres, cinemas and arts 13, Cafés 112, Restaurants, pubs and takeaways 273, Public services 112, Hotels and places to stay 89, Sport and leisure 172, Shops 630, Offices and business services 116, Trades and industry 33)
+
+Boundary relations/ways matched to a county or Northern Ireland: 53
+  relation 285977  'County Carlow'  admin_level=6  administrative  -> carlow
+  relation 283679  'County Cavan'  admin_level=6  administrative  -> cavan
+  relation 334885  'County Clare'  admin_level=6  administrative  -> clare
+  relation 4072664  'County Clare'  admin_level=7  administrative  -> clare
+  relation 11797890  'Cork'  admin_level=7  administrative  -> cork
+  relation 332631  'County Cork'  admin_level=6  administrative  -> cork
+  relation 283732  'County Donegal'  admin_level=6  administrative  -> donegal
+  relation 4085165  'County Donegal'  admin_level=7  administrative  -> donegal
+  relation 1109531  'Dublin'  admin_level=7  administrative  -> dublin
+  relation 1114164  'Fingal'  admin_level=7  administrative  -> dublin
+  relation 1115720  'Dún Laoghaire-Rathdown'  admin_level=7  administrative  -> dublin
+  relation 1117469  'South Dublin'  admin_level=7  administrative  -> dublin
+  relation 282800  'County Dublin'  admin_level=6  administrative  -> dublin
+  relation 1390623  'Cathair na Gaillimhe'  admin_level=7  administrative  -> galway
+  relation 335444  'County Galway'  admin_level=6  administrative  -> galway
+  relation 4072952  'County Galway'  admin_level=7  administrative  -> galway
+  relation 332622  'County Kerry'  admin_level=6  administrative  -> kerry
+  relation 285833  'County Kildare'  admin_level=6  administrative  -> kildare
+  relation 285980  'County Kilkenny'  admin_level=6  administrative  -> kilkenny
+  relation 285915  'County Laois'  admin_level=6  administrative  -> laois
+  relation 284368  'County Leitrim'  admin_level=6  administrative  -> leitrim
+  relation 4097197  'County Leitrim'  admin_level=7  administrative  -> leitrim
+  relation 14043380  'Limerick'  admin_level=7  administrative  -> limerick
+  relation 334898  'County Limerick'  admin_level=6  administrative  -> limerick
+  relation 4072666  'County Limerick'  admin_level=7  administrative  -> limerick
+  relation 2656808  'Longford'  admin_level=-  historic  -> longford
+  relation 335445  'County Longford'  admin_level=6  administrative  -> longford
+  relation 4203464  'County Longford'  admin_level=7  administrative  -> longford
+  relation 1763195  'County Louth'  admin_level=6  administrative  -> louth
+  relation 338539  'County Mayo'  admin_level=6  administrative  -> mayo
+  relation 4085175  'County Mayo'  admin_level=7  administrative  -> mayo
+  relation 282818  'County Meath'  admin_level=6  administrative  -> meath
+  relation 283647  'County Monaghan'  admin_level=6  administrative  -> monaghan
+  relation 1117773  'County Tyrone'  admin_level=6  historic  -> ni
+  relation 1118085  'County Fermanagh'  admin_level=6  historic  -> ni
+  relation 1119533  'County Down'  admin_level=6  historic  -> ni
+  relation 1119534  'County Antrim'  admin_level=6  historic  -> ni
+  relation 1119535  'County Armagh'  admin_level=6  historic  -> ni
+  relation 1959598  'County Londonderry'  admin_level=6  historic  -> ni
+  relation 335442  'County Offaly'  admin_level=6  administrative  -> offaly
+  relation 335443  'County Roscommon'  admin_level=6  administrative  -> roscommon
+  relation 4085177  'County Roscommon'  admin_level=7  administrative  -> roscommon
+  relation 2049792  'Sligo'  admin_level=-  historic  -> sligo
+  relation 335330  'County Sligo'  admin_level=6  administrative  -> sligo
+  relation 4085166  'County Sligo'  admin_level=7  administrative  -> sligo
+  relation 334372  'County Tipperary'  admin_level=6  administrative  -> tipperary
+  relation 1645570  'Waterford'  admin_level=7  administrative  -> waterford
+  relation 283426  'County Waterford'  admin_level=6  administrative  -> waterford
+  relation 335446  'County Westmeath'  admin_level=6  administrative  -> westmeath
+  relation 4217523  'County Westmeath'  admin_level=7  administrative  -> westmeath
+  relation 1693134  'Wexford'  admin_level=-  historic  -> wexford
+  relation 285981  'County Wexford'  admin_level=6  administrative  -> wexford
+  relation 282760  'County Wicklow'  admin_level=6  administrative  -> wicklow
+
+Boundary relations/ways with candidate tags but an unrecognised name: 291
+  relation 12383023  ''  admin_level=-  historic
+  relation 12452349  ''  admin_level=-  historic
+  relation 12452358  ''  admin_level=-  historic
+  relation 12452376  ''  admin_level=-  historic
+  relation 12452398  ''  admin_level=-  historic
+  relation 12452410  ''  admin_level=-  historic
+  relation 12452470  ''  admin_level=-  historic
+  relation 12452565  ''  admin_level=-  historic
+  relation 12452573  ''  admin_level=-  historic
+  relation 12452586  ''  admin_level=-  historic
+  relation 12452640  ''  admin_level=-  historic
+  relation 12452662  ''  admin_level=-  historic
+  relation 12452754  ''  admin_level=-  historic
+  relation 12452901  ''  admin_level=-  historic
+  relation 12452934  ''  admin_level=-  historic
+  relation 12452988  ''  admin_level=-  historic
+  relation 12452996  ''  admin_level=-  historic
+  relation 12454277  ''  admin_level=-  historic
+  relation 12454309  ''  admin_level=-  historic
+  relation 12454380  ''  admin_level=-  historic
+  relation 12454445  ''  admin_level=-  historic
+  relation 12454458  ''  admin_level=-  historic
+  relation 12454724  ''  admin_level=-  historic
+  relation 12454814  ''  admin_level=-  historic
+  relation 12456613  ''  admin_level=-  historic
+  relation 12456660  ''  admin_level=-  historic
+  relation 12456771  ''  admin_level=-  historic
+  relation 12456837  ''  admin_level=-  historic
+  relation 12457053  ''  admin_level=-  historic
+  relation 12457066  ''  admin_level=-  historic
+  relation 12457104  ''  admin_level=-  historic
+  relation 12457106  ''  admin_level=-  historic
+  relation 12457134  ''  admin_level=-  historic
+  relation 12457320  ''  admin_level=-  historic
+  relation 12457336  ''  admin_level=-  historic
+  relation 12457592  ''  admin_level=-  historic
+  relation 12457806  ''  admin_level=-  historic
+  relation 12457813  ''  admin_level=-  historic
+  relation 12457856  ''  admin_level=-  historic
+  relation 12457875  ''  admin_level=-  historic
+  relation 12457932  ''  admin_level=-  historic
+  relation 12457987  ''  admin_level=-  historic
+  relation 12458029  ''  admin_level=-  historic
+  relation 12458078  ''  admin_level=-  historic
+  relation 12458102  ''  admin_level=-  historic
+  relation 12458137  ''  admin_level=-  historic
+  relation 12458149  ''  admin_level=-  historic
+  relation 12458163  ''  admin_level=-  historic
+  relation 12458186  ''  admin_level=-  historic
+  relation 12458196  ''  admin_level=-  historic
+  relation 12458244  ''  admin_level=-  historic
+  relation 12458263  ''  admin_level=-  historic
+  relation 12458266  ''  admin_level=-  historic
+  relation 12458291  ''  admin_level=-  historic
+  relation 12458303  ''  admin_level=-  historic
+  relation 12458395  ''  admin_level=-  historic
+  relation 12458411  ''  admin_level=-  historic
+  relation 12458426  ''  admin_level=-  historic
+  relation 12458451  ''  admin_level=-  historic
+  relation 12458473  ''  admin_level=-  historic
+  relation 12458946  ''  admin_level=-  historic
+  relation 12458954  ''  admin_level=-  historic
+  relation 12459083  ''  admin_level=-  historic
+  relation 12459113  ''  admin_level=-  historic
+  relation 12459147  ''  admin_level=-  historic
+  relation 12459184  ''  admin_level=-  historic
+  relation 12459198  ''  admin_level=-  historic
+  relation 12459221  ''  admin_level=-  historic
+  relation 12459251  ''  admin_level=-  historic
+  relation 12459270  ''  admin_level=-  historic
+  relation 12459292  ''  admin_level=-  historic
+  relation 12459313  ''  admin_level=-  historic
+  relation 12460699  ''  admin_level=-  historic
+  relation 12460725  ''  admin_level=-  historic
+  relation 12460797  ''  admin_level=-  historic
+  relation 12460814  ''  admin_level=-  historic
+  relation 12460825  ''  admin_level=-  historic
+  relation 12460881  ''  admin_level=-  historic
+  relation 12460901  ''  admin_level=-  historic
+  relation 12460904  ''  admin_level=-  historic
+  relation 12460979  ''  admin_level=-  historic
+  relation 12460994  ''  admin_level=-  historic
+  relation 12461020  ''  admin_level=-  historic
+  relation 12461035  ''  admin_level=-  historic
+  relation 12461040  ''  admin_level=-  historic
+  relation 12737159  'Aghintain ED'  admin_level=-  historic
+  relation 19424315  'Antrim and Newtownabbey District'  admin_level=7  administrative
+  relation 5648488  'Ardamullivan ED'  admin_level=-  historic
+  relation 7063656  'Ardee LEA (2014-2019)'  admin_level=-  historic
+  relation 7033800  'Ardee Municipal District (2014-2019)'  admin_level=-  historic
+  relation 19413327  'Ards and North Down District'  admin_level=7  administrative
+  relation 19414613  'Armagh City, Banbridge and Craigavon District'  admin_level=7  administrative
+  relation 7033774  'Ashbourne MD 2014-2019'  admin_level=-  historic
+  relation 7063667  'Athenry-Oranmore LEA 2014-2018'  admin_level=-  historic
+  relation 6731075  'Athenry-Oranmore Municipal District (2014-2019)'  admin_level=-  historic
+  relation 7063657  'Athlone LEA (2014-2019)'  admin_level=-  historic
+  relation 7033719  'Athlone Municipal District (2014-2019)'  admin_level=-  historic
+  relation 5852879  'Athy LEA'  admin_level=-  historic
+  relation 5857133  'Athy Municipal District (2014-2019)'  admin_level=-  historic
+  relation 12737158  'Ballagh ED'  admin_level=-  historic
+  relation 7063563  'Ballina LEA (2014-2019)'  admin_level=-  historic
+  relation 7034696  'Ballina Municipal District (2014-2019)'  admin_level=-  historic
+  relation 4152468  'Ballinasloe ED (Historic)'  admin_level=-  historic
+  relation 7063671  'Ballinasloe LEA 2014-2019'  admin_level=-  historic
+  relation 6805531  'Ballinasloe Municipal District (2014-2019)'  admin_level=-  historic
+  relation 4152856  'Ballinasloe Urban District 1899 - 2014'  admin_level=-  historic
+  relation 4102097  'Ballintemple ED (Historic)'  admin_level=-  historic
+  relation 7063592  'Ballybay-Clones LEA (2014-2019)'  admin_level=-  historic
+  relation 7033848  'Ballybay-Clones Municipal District (2014-2019)'  admin_level=-  historic
+  relation 6825759  'Ballymahon LEA (2014-2019)'  admin_level=-  historic
+  relation 6825760  'Ballymahon Municipal District (2014-2019)'  admin_level=-  historic
+  relation 12461819  'Ballyshannon District Electoral Division'  admin_level=-  historic
+  relation 7063686  'Bandon - Kinsale LEA (2014-2019)'  admin_level=-  historic
+  relation 7033463  'Bandon - Kinsale MD (2014-2019)'  admin_level=-  historic
+  relation 3951433  'Barna ED (Historic) 1849 to 1985'  admin_level=-  historic
+  relation 19414244  'Belfast City District'  admin_level=7  administrative
+  relation 7033801  'Borough District of Drogheda (2014-2019)'  admin_level=-  historic
+  relation 5736598  'Borough of the County of the City of Dublin'  admin_level=-  historic
+  relation 9362903  'Borris-in-Ossory-Mountmellick LEA (2014-2019)'  admin_level=-  historic
+  relation 6781162  'Borris-in-Ossory-Mountmellick MD (2014-2019)'  admin_level=-  historic
+  relation 3258879  'Boyle'  admin_level=-  historic
+  relation 6812446  'Bray LEA (2014-2019)'  admin_level=-  historic
+  relation 6987266  'Buncrana DED'  admin_level=-  historic
+  relation 12462035  'Bundoran District Electoral Division'  admin_level=-  historic
+  relation 5645917  'Bunnahow ED'  admin_level=-  historic
+  relation 8145195  'Caher Electoral Division (Historic)'  admin_level=-  historic
+  relation 6489589  'Carlow LEA (2014-2019)'  admin_level=-  historic
+  relation 9370435  'Carlow Municipal District (2014-2019)'  admin_level=-  historic
+  relation 7063471  'Carrick-on-Suir LEA (2014-2019)'  admin_level=-  historic
+  relation 6855422  'Carrick-on-Suir MD (2014-2019)'  admin_level=-  historic
+  relation 7063591  'Carrickmacross-Castleblayney LEA (2014-2019)'  admin_level=-  historic
+  relation 9313985  'Carrickmacross-Castleblayney Municipal District (2014-2019)'  admin_level=-  historic
+  relation 3868779  'Carrowbrowne ED (Historic)'  admin_level=-  historic
+  relation 6855424  'Cashel-Tipperary MD (2014-2019)'  admin_level=-  historic
+  relation 11755995  'Castle Quarter (subtownland)'  admin_level=-  historic
+  relation 7063562  'Castlebar LEA (2014-2019)'  admin_level=-  historic
+  relation 7034697  'Castlebar Municipal District (2014-2019)'  admin_level=-  historic
+  relation 6800859  'Castlecomer LEA (2014-2019)'  admin_level=-  historic
+  relation 9371530  'Castlecomer Municipal District (2014-2019)'  admin_level=-  historic
+  relation 19425476  'Causeway Coast and Glens District'  admin_level=7  administrative
+  relation 7034647  'Cavan-Belturbet Municipal District'  admin_level=7  administrative
+  relation 4636474  'Celbridge Leixlip LEA'  admin_level=-  historic
+  relation 5857135  'Celbridge-Leixlip Municipal District (2014-2019)'  admin_level=-  historic
+  relation 7063561  'Claremorris LEA (2014-2019)'  admin_level=-  historic
+  relation 7034698  'Claremorris Municipal District (2014-2019)'  admin_level=-  historic
+  relation 4197908  'Cloncollog'  admin_level=-  historic
+  relation 7063470  'Clonmel LEA (2014-2019)'  admin_level=-  historic
+  relation 6855423  'Clonmel MD (2014-2019)'  admin_level=-  historic
+  relation 15405779  'Clontarf East'  admin_level=-  historic
+  relation 15405778  'Clontarf West'  admin_level=-  historic
+  relation 12737161  'Cole ED'  admin_level=-  historic
+  relation 7063679  'Comeragh'  admin_level=-  historic
+  relation 7026289  'Comeragh MD (2014-2019)'  admin_level=-  historic
+  relation 7063670  'Conamara'  admin_level=-  historic
+  relation 278721  'Connacht'  admin_level=5  administrative
+  relation 4651410  'Corporation North'  admin_level=-  historic
+  relation 14353071  'County Borough of Belfast'  admin_level=6  historic
+  relation 16303099  'County Borough of Londonderry'  admin_level=6  historic
+  relation 6731126  'County of the City of Galway'  admin_level=-  historic
+  relation 11552162  'Cullyhanna ED'  admin_level=-  historic
+  relation 4033245  'Curraghcreen'  admin_level=-  historic
+  relation 4152901  'Deerpark'  admin_level=-  historic
+  relation 4178300  'Demesne'  admin_level=-  historic
+  relation 19428422  'Derry and Strabane District'  admin_level=7  administrative
+  relation 4152812  'Derrymullan'  admin_level=-  historic
+  relation 9357270  'Drogheda LEA (2014-2019)'  admin_level=-  historic
+  relation 6114262  'Dublin City 1930 extensions'  admin_level=-  historic
+  relation 6152307  'Dublin City Extension 1898 ? TBC 2 of 5 parts'  admin_level=-  historic
+  relation 6135767  'Dublin City extension 1941'  admin_level=-  historic
+  relation 6144158  'Dublin City extensions 1940-1942'  admin_level=-  historic
+  relation 7033799  'Dundalk Municipal District (2014-2019)'  admin_level=-  historic
+  relation 7070577  'Dundalk South LEA (2014-2019)'  admin_level=-  historic
+  relation 7063678  'Dungarvan - Lismore LEA (2014-2019)'  admin_level=-  historic
+  relation 7026286  'Dungarvan - Lismore MD (2014-2019)'  admin_level=-  historic
+  relation 4257065  'Edenderry ED'  admin_level=-  historic
+  relation 7063502  'Ennis LEA (2014-2019)'  admin_level=-  historic
+  relation 7026169  'Ennis Municipal District (2014-2019)'  admin_level=-  historic
+  relation 9370004  'Enniscorthy LEA (2014-2019)'  admin_level=-  historic
+  relation 9370003  'Enniscorthy Municipal District (2014-2019)'  admin_level=-  historic
+  relation 3570146  'Enniskillen'  admin_level=-  historic
+  relation 9448068  'Enniskillen'  admin_level=-  historic
+  relation 4179424  'Farrannabox'  admin_level=-  historic
+  relation 4179210  'Farrannamartin'  admin_level=-  historic
+  relation 4183318  'Fermanagh and Omagh District'  admin_level=7  administrative
+  relation 7063690  'Fermoy LEA (2014-2019)'  admin_level=-  historic
+  relation 7033459  'Fermoy MD (2014-2019)'  admin_level=-  historic
+  relation 12737160  'Fivemiletown ED'  admin_level=-  historic
+  relation 9308108  'Galway City Central LEA (2014-2019)'  admin_level=-  historic
+  relation 9308109  'Galway City West LEA (2014-2019)'  admin_level=-  historic
+  relation 4152879  'Garbally Demesne'  admin_level=-  historic
+  relation 6804244  'Gorey LEA (2014-2019)'  admin_level=-  historic
+  relation 6804245  'Gorey Municipal District (2014-2019)'  admin_level=-  historic
+  relation 11755847  'Gortlug (subtownland)'  admin_level=-  historic
+  relation 2597031  'Granard'  admin_level=-  historic
+  relation 6826188  'Granard LEA (2014-2019)'  admin_level=-  historic
+  relation 6826189  'Granard Municipal District (2014-2019)'  admin_level=-  historic
+  relation 4177800  'Halfstraddle'  admin_level=-  historic
+  relation 9313572  'Inishowen LEA (2014-2019)'  admin_level=-  historic
+  relation 7034766  'Inishowen Municipal District (2014-2019)'  admin_level=-  historic
+  relation 9384214  'Kanturk - Mallow LEA (2014-2019)'  admin_level=-  historic
+  ... and 91 more
